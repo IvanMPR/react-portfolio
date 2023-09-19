@@ -1,0 +1,49 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+
+.modal__container {
+  position: relative;
+  z-index: 9999;
+}
+
+.modal__zoom--content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.9s;
+
+  .zoomed-img {
+    @include absoluteCenter;
+    border-radius: 0.5rem;
+    width: 75vw;
+  }
+  .zoomed-img-collage {
+    @include absoluteCenter;
+    border-radius: 0.5rem;
+    width: 50vw;
+  }
+
+  // adjusting zoomed modal image size on different screens
+  @include respond(phone) {
+    .zoomed-img,
+    .zoomed-img-collage {
+      width: calc(100vw - 5rem);
+    }
+  }
+  @include respond(tab-p) {
+    .zoomed-img,
+    .zoomed-img-collage {
+      width: calc(100vw - 10rem);
+    }
+  }
+  @include respond(tab-l) {
+    .zoomed-img,
+    .zoomed-img-collage {
+      width: calc(100vw - 10rem);
+    }
+  }
+}
