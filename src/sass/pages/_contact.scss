@@ -1,5 +1,5 @@
-@use '../abstracts/' as *;
-@use '../base/' as *;
+@use "../abstracts/" as *;
+@use "../base/" as *;
 
 .contact-section {
   position: relative;
@@ -46,7 +46,7 @@
 
     &__input {
       padding: 1rem;
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
       font-size: var(--font-l);
     }
 

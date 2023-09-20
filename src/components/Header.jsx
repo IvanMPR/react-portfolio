@@ -13,7 +13,7 @@ function Header() {
         </div>
         <div className="nav-menu">
           <input type="checkbox" className="nav-menu__checkbox" id="toggle" />
-          <label className="nav-menu__label" for="toggle">
+          <label className="nav-menu__label" htmlFor="toggle">
             <span className="nav-menu__label-bar">&nbsp;</span>
           </label>
         </div>
