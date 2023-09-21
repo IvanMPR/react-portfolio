@@ -1,20 +1,20 @@
-@use '../abstracts/' as *;
-@use '../base/' as *;
+@use "../abstracts/" as *;
+@use "../base/" as *;
 
 .top-menu {
   position: fixed;
-  top: -22rem;
+  top: 0;
   left: 0;
   width: 100vw;
   height: 16rem;
   background-color: var(--color-bg-offset);
   transition: all 0.2s;
-  z-index: 999;
+  z-index: -222;
   align-items: flex-end;
   justify-content: space-between;
   padding: 0 5.5rem 2rem 2rem;
   border-bottom: 1px solid var(--color-bg);
-  display: none;
+  // display: none;
 
   &__link-container {
     position: relative;
@@ -25,7 +25,7 @@
   }
 
   &__link-container:before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     width: 100%;

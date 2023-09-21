@@ -1,16 +1,22 @@
 import ProjectsDot from "./ProjectsDot";
 
-function ProjectsDotContainer({ projects, currentImage, setCurrentImage }) {
+function ProjectsDotContainer({
+  projectsObj,
+  setProjectsObj,
+  currentImage,
+  setCurrentImage,
+}) {
   // state for all projects
 
   return (
     <div className="dots-container">
-      {projects.map((_, i) => (
+      {projectsObj.map((_, i) => (
         <ProjectsDot
           key={i}
           dotNum={i}
           setCurrentImage={setCurrentImage}
           currentImage={currentImage}
+          setProjectsObj={setProjectsObj}
         />
       ))}
     </div>

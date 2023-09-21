@@ -1,4 +1,4 @@
-import Header from "../components/Header";
+import Header from "../components/header/Header";
 import ContactMainSection from "../components/ContactMainSection";
 import Footer from "../components/Footer";
 
