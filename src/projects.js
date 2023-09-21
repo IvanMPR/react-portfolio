@@ -1,4 +1,4 @@
-export const projectsObj = [
+export const projectsObject = [
   {
     shortTitle: "shootout",
     imageSrc: "/shooting.jpg",
