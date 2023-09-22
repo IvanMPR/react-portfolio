@@ -1,11 +1,15 @@
 import { useState } from "react";
 
 import Project from "./Project";
+
 import ProjectsDotContainer from "./ProjectsDotContainer";
+
+import { projectsAdvancedObject } from "../../projectsAdvanced";
+
+const threshold = projectsAdvancedObject.length - 1;
 
 function ProjectsFrame({ isRowReversed, arrayOfProjects }) {
   const [currentImage, setCurrentImage] = useState(0);
-  const threshold = arrayOfProjects.length - 1;
 
   const handleLeftArrowClick = () => {
     setCurrentImage(currentImage - 1 >= 0 ? currentImage - 1 : threshold);

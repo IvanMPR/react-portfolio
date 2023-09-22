@@ -47,7 +47,7 @@ function AboutMainSection() {
           </div>
           <div className="about-section__content--right">
             <div className="right-intro__img">
-              <img src="./images/blob5fixed.png" alt="test" className="blob2" />
+              <img src="/blob5fixed.png" alt="test" className="blob2" />
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@ function AboutMainSection() {
                 <span className="skill-icon">
                   <img
                     className="skill-icon-svg"
-                    src="./images/svg/html5.svg"
+                    src="/svg/html5.svg"
                     title="html icon"
                     alt="html icon"
                   />
@@ -80,7 +80,7 @@ function AboutMainSection() {
                 <span className="skill-icon">
                   <img
                     className="skill-icon-svg"
-                    src="./images/svg/css3.svg"
+                    src="/svg/css3.svg"
                     title="css icon"
                     alt="css icon"
                   />
@@ -95,7 +95,7 @@ function AboutMainSection() {
                 <span className="skill-icon">
                   <img
                     className="skill-icon-svg"
-                    src="./images/svg/js.svg"
+                    src="/svg/js.svg"
                     title="js icon"
                     alt="js icon"
                   />
@@ -110,7 +110,7 @@ function AboutMainSection() {
                 <span className="skill-icon">
                   <img
                     className="skill-icon-svg"
-                    src="./images/svg/sass.svg"
+                    src="/svg/sass.svg"
                     title="sass icon"
                     alt="sass icon"
                   />
@@ -125,7 +125,7 @@ function AboutMainSection() {
                 <span class="skill-icon">
                   <img
                     class="skill-icon-svg"
-                    src="./images/icons/react.png"
+                    src="/icons/react.png"
                     title="react icon"
                     alt="react icon"
                   />
@@ -140,7 +140,7 @@ function AboutMainSection() {
                 <span class="skill-icon">
                   <img
                     class="skill-icon-svg"
-                    src="./images/svg/nodejs.svg"
+                    src="/svg/nodejs.svg"
                     title="nodejs icon"
                     alt="nodejs icon"
                   />
@@ -155,7 +155,7 @@ function AboutMainSection() {
                 <span class="skill-icon">
                   <img
                     class="skill-icon-svg"
-                    src="./images/svg/socket-io.svg"
+                    src="/svg/socket-io.svg"
                     title="socket-io icon"
                     alt="socket-io icon"
                   />
@@ -170,7 +170,7 @@ function AboutMainSection() {
                 <span class="skill-icon">
                   <img
                     class="skill-icon-svg"
-                    src="./images/svg/express.svg"
+                    src="/svg/express.svg"
                     title="express icon"
                     alt="express icon"
                   />
@@ -185,7 +185,7 @@ function AboutMainSection() {
                 <span class="skill-icon">
                   <img
                     class="skill-icon-svg"
-                    src="./images/svg/illustrator.svg"
+                    src="/svg/illustrator.svg"
                     title="illustrator icon"
                     alt="illustrator icon"
                   />
@@ -267,6 +267,7 @@ function AboutMainSection() {
               </div>
               <div class="certificate">
                 <a
+                  rel="noreferrer"
                   class="certificate__link"
                   href="http://ude.my/UC-78309db0-9ec5-4a53-9b4b-8ecadbd8baf2/"
                   target="_blank"
@@ -274,7 +275,7 @@ function AboutMainSection() {
                   <img
                     class="certificate__img"
                     src="https://udemy-certificate.s3.amazonaws.com/image/UC-78309db0-9ec5-4a53-9b4b-8ecadbd8baf2.jpg"
-                    alt="Jonas Smedtman course"
+                    alt="Jonas Shmedtman course"
                     title="Click to enlarge certificate"
                   />
                 </a>
@@ -378,8 +379,8 @@ function AboutMainSection() {
                 <li class="about-li">
                   created this portfolio website with intention to present
                   myself in the new environment, and as an important piece of
-                  puzzle in the process of the landing my first job in the new
-                  industry...
+                  puzzle in the process of(establishing myself) the landing my
+                  first job in the new industry...
                 </li>
               </ul>
             </div>
@@ -387,7 +388,7 @@ function AboutMainSection() {
           <div class="about-section__content--right">
             <img
               class="collage"
-              src="./images/mix.jpg"
+              src="/mix.jpg"
               alt="Collage of personal images"
             />
           </div>

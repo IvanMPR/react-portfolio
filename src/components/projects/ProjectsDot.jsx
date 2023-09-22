@@ -1,6 +1,4 @@
 function ProjectsDot({ dotNum, currentImage, setCurrentImage }) {
-  console.log(dotNum, currentImage);
-
   function handleClickOnDot() {
     setCurrentImage(dotNum);
   }

@@ -35,4 +35,27 @@ export const projectsObject = [
     side of the screen...`,
     projectNum: 2,
   },
+  {
+    shortTitle: "weather",
+    imageSrc: "/weather.jpg",
+    alt: "Weather app",
+    fullTitle: "Weather app",
+    demoHref: "https://ivanmpr.github.io/Weather-app/",
+    codeHref: "https://github.com/IvanMPR/Weather-app",
+    description: `Weather app is responsive, and works behind the scene with two
+    third party API-s...`,
+    projectNum: 3,
+  },
+
+  {
+    shortTitle: "calculator",
+    imageSrc: "/calculator.jpg",
+    alt: "JS Calculator",
+    fullTitle: "JS Calculator",
+    demoHref: "https://ivanmpr.github.io/Calculator/",
+    codeHref: "https://github.com/IvanMPR/Calculator",
+    description: `One of the JavaScript classics, calculator with button
+    sounds`,
+    projectNum: 4,
+  },
 ];

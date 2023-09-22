@@ -1,5 +1,5 @@
-@use '../abstracts/' as *;
-@use '../base/' as *;
+@use "../abstracts/" as *;
+@use "../base/" as *;
 // CV button
 .btn-wrapper {
   text-align: center;
@@ -162,6 +162,7 @@
               text-decoration: underline;
               font-style: italic;
               color: var(--color-primary);
+              margin: 0 0.5rem;
             }
           }
         }

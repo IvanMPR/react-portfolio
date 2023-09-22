@@ -1,4 +1,4 @@
-function Project(props) {
+function ProjectMirrored(props) {
   const {
     shortTitle,
     imageSrc,
@@ -13,7 +13,7 @@ function Project(props) {
   } = props.project;
 
   const { currentImage, i, isRowReversed } = props;
-
+  console.log(isRowReversed, "isRowReversed");
   return (
     <div
       className={`project project-${shortTitle}`}
@@ -72,4 +72,4 @@ function Project(props) {
   );
 }
 
-export default Project;
+export default ProjectMirrored;
