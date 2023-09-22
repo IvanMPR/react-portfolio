@@ -1,20 +1,23 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+
 function HeaderThemeToggler({ colorTheme, setColorTheme }) {
   return (
     <div className="nav-left__toggler">
       {colorTheme === "default" && (
-        <i
-          className="fa-solid fa-moon"
-          title="Dark mode"
+        <FontAwesomeIcon
+          icon={faMoon}
+          title="Click for dark mode"
           onClick={() => setColorTheme("dark")}
-        ></i>
+        />
       )}
 
       {colorTheme === "dark" && (
-        <i
-          className="fa-solid fa-sun"
-          title="Light mode"
+        <FontAwesomeIcon
+          icon={faSun}
+          title="Click for dark mode"
           onClick={() => setColorTheme("default")}
-        ></i>
+        />
       )}
     </div>
   );

@@ -34,7 +34,7 @@
     display: block;
     // margin-left: auto;
   }
-
+  // .fab className style for footer brand icons/ to be refactored
   .fab {
     color: var(--color-text);
     margin-right: 2rem;
@@ -59,10 +59,6 @@
     .fa-solid {
       color: var(--color-text);
       font-size: var(--font-normal);
-    }
-
-    .fa-computer-mouse {
-      color: var(--color-primary);
     }
 
     &--next:active {
