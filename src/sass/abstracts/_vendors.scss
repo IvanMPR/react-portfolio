@@ -1,12 +1,21 @@
 // Font Awesome Icons Styling
-.fab,
-.testerIcons {
+.fab {
   color: var(--color-text);
   margin-right: 2rem;
   transition: color 0.2s;
 }
 
-.fab:hover,
-.testerIcons:hover {
+.fab:hover {
   color: var(--color-primary);
+}
+
+.fa-solid {
+  display: block;
+  font-size: var(--font-normal);
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.gratitude-thumb {
+  color: red;
 }

@@ -19,14 +19,14 @@ function Project(props) {
       className={`project project-${shortTitle}`}
       style={{
         transform: `translateX(${100 * (i - currentImage)}%)`,
-        flexDirection: isRowReversed ? "row-reverse" : "row",
+        flexDirection: isRowReversed === "true" ? "row-reverse" : "row",
       }}
     >
       <div
         className="project-left"
         style={{
-          paddingLeft: isRowReversed ? "0" : "5rem",
-          paddingRight: isRowReversed ? "5rem" : "0",
+          paddingLeft: isRowReversed === "true" ? "0" : "5rem",
+          paddingRight: isRowReversed === "true" ? "5rem" : "0",
         }}
       >
         <div className="project-left__image-container wrapper">
@@ -41,8 +41,8 @@ function Project(props) {
       <div
         className="project-right"
         style={{
-          paddingRight: isRowReversed ? "0" : "5rem",
-          paddingLeft: isRowReversed ? "5rem" : "0",
+          paddingRight: isRowReversed === "true" ? "0" : "5rem",
+          paddingLeft: isRowReversed === "true" ? "5rem" : "0",
         }}
       >
         <h3 className="project-right__title">{fullTitle}</h3>

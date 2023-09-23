@@ -1,5 +1,5 @@
 import Header from "../components/header/Header";
-import ContactMainSection from "../components/ContactMainSection";
+import ContactMainSection from "../components/contact/ContactMainSection";
 import Footer from "../components/Footer";
 
 function Contact() {

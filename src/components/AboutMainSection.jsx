@@ -1,9 +1,20 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUserTie } from "@fortawesome/free-solid-svg-icons";
+
+import SectionTitle from "./miscellaneous/SectionTitle";
+
 function AboutMainSection() {
   return (
     <section className="about-section container" id="about">
-      <h2 className="section__title wrapper">
+      <SectionTitle
+        title="About"
+        icon={
+          <FontAwesomeIcon icon={faUserTie} className="section__title--icon" />
+        }
+      />
+      {/* <h2 className="section__title wrapper">
         About me<i className="fas fa-user-tie section__title--icon"></i>
-      </h2>
+      </h2> */}
       <div className="container wrapper btn-wrapper">
         <a href="#" className="btn btn__cv">
           Download CV
@@ -120,104 +131,104 @@ function AboutMainSection() {
                 </div>
               </div>
             </div>
-            <div class="left-skills">
-              <div class="left-skills__react skills">
-                <span class="skill-icon">
+            <div className="left-skills">
+              <div className="left-skills__react skills">
+                <span className="skill-icon">
                   <img
-                    class="skill-icon-svg"
+                    className="skill-icon-svg"
                     src="/icons/react.png"
                     title="react icon"
                     alt="react icon"
                   />
                 </span>
-                <div class="skill-bar">
-                  <div class="skill-bar-inner inner-react"></div>
+                <div className="skill-bar">
+                  <div className="skill-bar-inner inner-react"></div>
                 </div>
               </div>
             </div>
-            <div class="left-skills">
-              <div class="left-skills__nodejs skills">
-                <span class="skill-icon">
+            <div className="left-skills">
+              <div className="left-skills__nodejs skills">
+                <span className="skill-icon">
                   <img
-                    class="skill-icon-svg"
+                    className="skill-icon-svg"
                     src="/svg/nodejs.svg"
                     title="nodejs icon"
                     alt="nodejs icon"
                   />
                 </span>
-                <div class="skill-bar">
-                  <div class="skill-bar-inner inner-nodejs"></div>
+                <div className="skill-bar">
+                  <div className="skill-bar-inner inner-nodejs"></div>
                 </div>
               </div>
             </div>
-            <div class="left-skills">
-              <div class="left-skills__socketio skills">
-                <span class="skill-icon">
+            <div className="left-skills">
+              <div className="left-skills__socketio skills">
+                <span className="skill-icon">
                   <img
-                    class="skill-icon-svg"
+                    className="skill-icon-svg"
                     src="/svg/socket-io.svg"
                     title="socket-io icon"
                     alt="socket-io icon"
                   />
                 </span>
-                <div class="skill-bar">
-                  <div class="skill-bar-inner inner-socketio"></div>
+                <div className="skill-bar">
+                  <div className="skill-bar-inner inner-socketio"></div>
                 </div>
               </div>
             </div>
-            <div class="left-skills">
-              <div class="left-skills__express skills">
-                <span class="skill-icon">
+            <div className="left-skills">
+              <div className="left-skills__express skills">
+                <span className="skill-icon">
                   <img
-                    class="skill-icon-svg"
+                    className="skill-icon-svg"
                     src="/svg/express.svg"
                     title="express icon"
                     alt="express icon"
                   />
                 </span>
-                <div class="skill-bar">
-                  <div class="skill-bar-inner inner-express"></div>
+                <div className="skill-bar">
+                  <div className="skill-bar-inner inner-express"></div>
                 </div>
               </div>
             </div>
-            <div class="left-skills">
-              <div class="left-skills__illustrator skills">
-                <span class="skill-icon">
+            <div className="left-skills">
+              <div className="left-skills__illustrator skills">
+                <span className="skill-icon">
                   <img
-                    class="skill-icon-svg"
+                    className="skill-icon-svg"
                     src="/svg/illustrator.svg"
                     title="illustrator icon"
                     alt="illustrator icon"
                   />
                 </span>
-                <div class="skill-bar">
-                  <div class="skill-bar-inner inner-illustrator"></div>
+                <div className="skill-bar">
+                  <div className="skill-bar-inner inner-illustrator"></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="about-section__content--right">
-            <div class="right-skills container">
-              <div class="cert-title">
+          <div className="about-section__content--right">
+            <div className="right-skills container">
+              <div className="cert-title">
                 <a
                   rel="noopener noreferrer"
                   href="https://www.udemy.com/course/modern-html-css-from-the-beginning/"
                   target="_blank"
                   title="Link to the Modern HTML & CSS course"
-                  class="cert-title__link"
+                  className="cert-title__link"
                 >
                   HTML & CSS
                 </a>
               </div>
-              <div class="certificate">
+              <div className="certificate">
                 <a
                   rel="noopener noreferrer"
-                  class="certificate__link"
+                  className="certificate__link"
                   href="http://ude.my/UC-78309db0-9ec5-4a53-9b4b-8ecadbd8baf2/"
                   target="_blank"
                 >
                   <img
-                    class="certificate__img"
+                    className="certificate__img"
                     src="https://udemy-certificate.s3.amazonaws.com/image/UC-78309db0-9ec5-4a53-9b4b-8ecadbd8baf2.jpg"
                     alt="HTML & CSS course"
                     title="Click to enlarge certificate"
@@ -225,27 +236,27 @@ function AboutMainSection() {
                 </a>
               </div>
             </div>
-            <div class="right-skills container">
-              <div class="cert-title">
+            <div className="right-skills container">
+              <div className="cert-title">
                 <a
                   rel="noopener noreferrer"
                   href="https://www.udemy.com/course/advanced-css-and-sass/"
                   target="_blank"
                   title="Link to the Advanced CSS and Sass course"
-                  class="cert-title__link"
+                  className="cert-title__link"
                 >
                   Advanced SASS & CSS
                 </a>
               </div>
-              <div class="certificate">
+              <div className="certificate">
                 <a
                   rel="noopener noreferrer"
-                  class="certificate__link"
+                  className="certificate__link"
                   href="http://ude.my/UC-78309db0-9ec5-4a53-9b4b-8ecadbd8baf2/"
                   target="_blank"
                 >
                   <img
-                    class="certificate__img"
+                    className="certificate__img"
                     src="https://udemy-certificate.s3.amazonaws.com/image/UC-78309db0-9ec5-4a53-9b4b-8ecadbd8baf2.jpg"
                     alt="Jonas Shmedtman course"
                     title="Click to enlarge certificate"
@@ -253,27 +264,27 @@ function AboutMainSection() {
                 </a>
               </div>
             </div>
-            <div class="right-skills container">
-              <div class="cert-title">
+            <div className="right-skills container">
+              <div className="cert-title">
                 <a
                   rel="noopener noreferrer"
                   href="https://www.udemy.com/course/the-complete-javascript-course/ "
                   target="_blank"
                   title="Link to the JavaScript course"
-                  class="cert-title__link"
+                  className="cert-title__link"
                 >
                   JavaScript
                 </a>
               </div>
-              <div class="certificate">
+              <div className="certificate">
                 <a
                   rel="noreferrer"
-                  class="certificate__link"
+                  className="certificate__link"
                   href="http://ude.my/UC-78309db0-9ec5-4a53-9b4b-8ecadbd8baf2/"
                   target="_blank"
                 >
                   <img
-                    class="certificate__img"
+                    className="certificate__img"
                     src="https://udemy-certificate.s3.amazonaws.com/image/UC-78309db0-9ec5-4a53-9b4b-8ecadbd8baf2.jpg"
                     alt="Jonas Shmedtman course"
                     title="Click to enlarge certificate"
@@ -283,12 +294,12 @@ function AboutMainSection() {
             </div>
           </div>
         </div>
-        <div class="about-section__content--pair">
-          <div class="about-section__content--left">
-            <h3 class="about-subtitle wrapper-l">Personal & bio</h3>
-            <div class="about__personal">
-              <ul class="about__personal--ul">
-                <li class="about-li">
+        <div className="about-section__content--pair">
+          <div className="about-section__content--left">
+            <h3 className="about-subtitle wrapper-l">Personal & bio</h3>
+            <div className="about__personal">
+              <ul className="about__personal--ul">
+                <li className="about-li">
                   from 1996 to 2014 I was a professional basketball
                   <a
                     rel="noopener noreferrer"
@@ -300,7 +311,7 @@ function AboutMainSection() {
                   </a>
                   in many teams and countries
                 </li>
-                <li class="about-li">
+                <li className="about-li">
                   I was a
                   <a
                     rel="noopener noreferrer"
@@ -313,7 +324,7 @@ function AboutMainSection() {
                   of the U16 National team of Yugoslavia, winner of the European
                   Championship in 1997 in Belgium
                 </li>
-                <li class="about-li">
+                <li className="about-li">
                   in 2010, after graduating in
                   <a
                     rel="noopener noreferrer"
@@ -335,7 +346,7 @@ function AboutMainSection() {
                   , with associated FIBA license
                 </li>
 
-                <li class="about-li">
+                <li className="about-li">
                   somewhere along the way, I learned to
                   <a
                     rel="noopener noreferrer"
@@ -349,7 +360,7 @@ function AboutMainSection() {
                   almost all of the projects I created contains my graphic
                   resources
                 </li>
-                <li class="about-li">
+                <li className="about-li">
                   from 2015 I work at
                   <a
                     rel="noopener noreferrer"
@@ -362,21 +373,21 @@ function AboutMainSection() {
                   , an American based company that provides high quality,
                   advanced basketball statistic, game and players analyses
                 </li>
-                <li class="about-li">
+                <li className="about-li">
                   my current position is Phase II Logger, with responsibilities
                   to recognize and organize above mentioned basketball
                   information, and not related to web development
                 </li>
 
-                <li class="about-li">
+                <li className="about-li">
                   from 2007 married to Aleksandra, father of two children,
                   daughter Maša and son Miloš
                 </li>
-                <li class="about-li">
+                <li className="about-li">
                   my hobbies are reading, cycling, skiing, snorkeling, swimming,
                   and of course basketball
                 </li>
-                <li class="about-li">
+                <li className="about-li">
                   created this portfolio website with intention to present
                   myself in the new environment, and as an important piece of
                   puzzle in the process of(establishing myself) the landing my
@@ -385,9 +396,9 @@ function AboutMainSection() {
               </ul>
             </div>
           </div>
-          <div class="about-section__content--right">
+          <div className="about-section__content--right">
             <img
-              class="collage"
+              className="collage"
               src="/mix.jpg"
               alt="Collage of personal images"
             />

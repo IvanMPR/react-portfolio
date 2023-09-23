@@ -9,6 +9,8 @@ import ProjectsSubtitle from "./ProjectsSubtitle";
 import { projectsObject } from "../../projects";
 import { projectsAdvancedObject } from "../../projectsAdvanced";
 
+import { begToIntIcons, intToAdvIcons } from "./icons";
+
 function ProjectsMainSection() {
   return (
     <section className="projects-section container" id="projects">
@@ -21,67 +23,22 @@ function ProjectsMainSection() {
       />
 
       <SectionContent prefix="projects">
-        <ProjectsSubtitle />
+        <ProjectsSubtitle
+          heading={"Level: beginner to intermediate"}
+          iconSet={begToIntIcons}
+        />
+        <ProjectsFrame
+          arrayOfProjects={projectsObject}
+          isRowReversed={"false"}
+        />
 
-        <ProjectsFrame arrayOfProjects={projectsObject} isRowReversed={false} />
-        <div className="subtitle subtitle__advanced">
-          <div className="subtitle-text">
-            <p>Level: intermediate to advanced</p>
-          </div>
-          <div className="subtitle-icon__wrapper">
-            <div className="subtitle-icon">
-              <img
-                src="/svg/js.svg"
-                alt="JavaScript icon"
-                title="JavaScript icon"
-                className="tech-icons"
-              />
-            </div>
-            <div className="subtitle-icon">
-              <img
-                src="/icons/react.png"
-                alt="React icon"
-                title="React icon"
-                className="tech-icons"
-              />
-            </div>
-            <div className="subtitle-icon">
-              <img
-                src="/svg/nodejs.svg"
-                alt="NodeJS icon"
-                title="NodeJS icon"
-                className="tech-icons"
-              />
-            </div>
-            <div className="subtitle-icon">
-              <img
-                src="/svg/express.svg"
-                alt="Node Express icon"
-                title="Node Express icon"
-                className="tech-icons"
-              />
-            </div>
-            <div className="subtitle-icon">
-              <img
-                src="/svg/socket-io.svg"
-                alt="Socket-io icon"
-                title="Socket-io icon"
-                className="tech-icons"
-              />
-            </div>
-            <div className="subtitle-icon">
-              <img
-                src="/svg/parcel.svg"
-                alt="Parcel js bundler tool icon"
-                title="Parcel js bundler tool icon"
-                className="tech-icons"
-              />
-            </div>
-          </div>
-        </div>
+        <ProjectsSubtitle
+          heading={"Level: intermediate to advanced"}
+          iconSet={intToAdvIcons}
+        />
         <ProjectsFrame
           arrayOfProjects={projectsAdvancedObject}
-          isRowReversed={true}
+          isRowReversed={"true"}
         />
       </SectionContent>
     </section>

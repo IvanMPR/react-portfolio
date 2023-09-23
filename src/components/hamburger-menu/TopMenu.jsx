@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 function TopMenu() {
   return (
-    <div class="top-menu">
-      <div class="top-menu__link-container">
+    <div className="top-menu">
+      <div className="top-menu__link-container">
         <Link
           to="/"
           className="top-menu__a top-menu__links"
@@ -12,7 +12,7 @@ function TopMenu() {
           home
         </Link>
       </div>
-      <div class="top-menu__link-container">
+      <div className="top-menu__link-container">
         <Link
           to="/projects"
           className="top-menu__a top-menu__links"
@@ -21,7 +21,7 @@ function TopMenu() {
           projects
         </Link>
       </div>
-      <div class="top-menu__link-container">
+      <div className="top-menu__link-container">
         <Link
           to="/about"
           className="top-menu__a top-menu__links"
@@ -30,7 +30,7 @@ function TopMenu() {
           about
         </Link>
       </div>
-      <div class="top-menu__link-container">
+      <div className="top-menu__link-container">
         <Link
           to="/contact"
           className="top-menu__a top-menu__links"
