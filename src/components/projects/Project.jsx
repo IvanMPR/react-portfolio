@@ -1,3 +1,5 @@
+import ProjectsImage from "./ProjectsImage";
+
 function Project(props) {
   const {
     shortTitle,
@@ -12,10 +14,65 @@ function Project(props) {
     description,
   } = props.project;
 
-  const { currentImage, i, isRowReversed } = props;
+  const {
+    currentImage,
+    i,
+    isRowReversed,
+    isZoomed,
+    setIsZoomed,
+    zoomedImageSrc,
+    setZoomedImageSrc,
+  } = props;
 
   return (
     <div
+      className={`project project-${shortTitle}`}
+      style={{ transform: `translateX(${100 * (i - currentImage)}%)` }}
+    >
+      <div className="project-left">
+        <div className="project-left__image-container wrapper">
+          <ProjectsImage
+            imageSrc={imageSrc}
+            title={title}
+            alt={alt}
+            isZoomed={isZoomed}
+            setIsZoomed={setIsZoomed}
+            zoomedImageSrc={zoomedImageSrc}
+            setZoomedImageSrc={setZoomedImageSrc}
+          />
+        </div>
+      </div>
+      <div className="project-right">
+        <h3 className="project-right__title">{fullTitle}</h3>
+        <div className="project-right__container">
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href={demoHref}
+            title={demoTitle}
+            className="project-right__container-link project-right__demo"
+          >
+            Demo
+          </a>
+          <a
+            rel="noreferrer"
+            href={codeHref}
+            target="_blank"
+            title={codeTitle}
+            className="project-right__container-link project-right__code"
+          >
+            Source code
+          </a>
+        </div>
+        <p className="project-right__description">{description}</p>
+      </div>
+    </div>
+  );
+}
+
+export default Project;
+/*
+<div
       className={`project project-${shortTitle}`}
       style={{
         transform: `translateX(${100 * (i - currentImage)}%)`,
@@ -30,11 +87,14 @@ function Project(props) {
         }}
       >
         <div className="project-left__image-container wrapper">
-          <img
-            className="project-left__image"
-            src={imageSrc}
+          <ProjectsImage
+            imageSrc={imageSrc}
             title={title}
             alt={alt}
+            isZoomed={isZoomed}
+            setIsZoomed={setIsZoomed}
+            zoomedImageSrc={zoomedImageSrc}
+            setZoomedImageSrc={setZoomedImageSrc}
           />
         </div>
       </div>
@@ -69,7 +129,4 @@ function Project(props) {
         <p className="project-right__description">{description}</p>
       </div>
     </div>
-  );
-}
-
-export default Project;
+    */

@@ -6,10 +6,12 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import PageNotFound from "./pages/PageNotFound";
+import Header from "./components/header/Header";
 
 function App() {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />

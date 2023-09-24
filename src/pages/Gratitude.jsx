@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useCountdown } from "react-countdown-circle-timer";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 
-import Header from "../components/header/Header";
+// import Header from "../components/header/Header";
 import { useEffect } from "react";
 
 function Gratitude() {
@@ -24,7 +24,7 @@ function Gratitude() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className="thanks">
         <h2 className="thanks__h2">Thank you !</h2>
         <div className="thanks__icon">

@@ -3,7 +3,14 @@ import { useState } from "react";
 import Project from "./Project";
 import ProjectsDotContainer from "./ProjectsDotContainer";
 
-function ProjectsFrame({ isRowReversed, arrayOfProjects }) {
+function ProjectsFrame({
+  isRowReversed,
+  arrayOfProjects,
+  isZoomed,
+  setIsZoomed,
+  zoomedImageSrc,
+  setZoomedImageSrc,
+}) {
   const [currentImage, setCurrentImage] = useState(0);
   const threshold = arrayOfProjects.length - 1;
 
@@ -31,6 +38,10 @@ function ProjectsFrame({ isRowReversed, arrayOfProjects }) {
           i={i}
           currentImage={currentImage}
           isRowReversed={isRowReversed}
+          isZoomed={isZoomed}
+          setIsZoomed={setIsZoomed}
+          zoomedImageSrc={zoomedImageSrc}
+          setZoomedImageSrc={setZoomedImageSrc}
         />
       ))}
 

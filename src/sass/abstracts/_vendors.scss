@@ -1,11 +1,13 @@
 // Font Awesome Icons Styling
-.fab {
+.fab,
+.subtitle-text__icon {
   color: var(--color-text);
   margin-right: 2rem;
   transition: color 0.2s;
 }
 
-.fab:hover {
+.fab:hover,
+.subtitle-text__icon:hover {
   color: var(--color-primary);
 }
 

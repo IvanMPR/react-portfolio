@@ -21,6 +21,12 @@
         font-size: var(--font-normal);
         color: var(--color-text);
         margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+
+        &__heading {
+          margin: 0 2rem;
+        }
       }
 
       &-icon__wrapper {

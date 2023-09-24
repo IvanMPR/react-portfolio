@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCog } from "@fortawesome/free-solid-svg-icons";
 
@@ -10,11 +12,16 @@ import { projectsObject } from "../../projects";
 import { projectsAdvancedObject } from "../../projectsAdvanced";
 
 import { begToIntIcons, intToAdvIcons } from "./icons";
+import Modal from "../miscellaneous/Modal";
 
 function ProjectsMainSection() {
-  return (
+  const [isZoomed, setIsZoomed] = useState(false);
+  const [zoomedImageSrc, setZoomedImageSrc] = useState("");
+
+  return isZoomed ? (
+    <Modal src={zoomedImageSrc} setIsZoomed={setIsZoomed} />
+  ) : (
     <section className="projects-section container" id="projects">
-      {/* <div className="background"></div> */}
       <SectionTitle
         title="Projects"
         icon={
@@ -30,6 +37,10 @@ function ProjectsMainSection() {
         <ProjectsFrame
           arrayOfProjects={projectsObject}
           isRowReversed={"false"}
+          isZoomed={isZoomed}
+          setIsZoomed={setIsZoomed}
+          zoomedImageSrc={zoomedImageSrc}
+          setZoomedImageSrc={setZoomedImageSrc}
         />
 
         <ProjectsSubtitle
@@ -39,10 +50,13 @@ function ProjectsMainSection() {
         <ProjectsFrame
           arrayOfProjects={projectsAdvancedObject}
           isRowReversed={"true"}
+          isZoomed={isZoomed}
+          setIsZoomed={setIsZoomed}
+          zoomedImageSrc={zoomedImageSrc}
+          setZoomedImageSrc={setZoomedImageSrc}
         />
       </SectionContent>
     </section>
   );
 }
-
 export default ProjectsMainSection;
