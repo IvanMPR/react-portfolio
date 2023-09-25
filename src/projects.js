@@ -12,15 +12,13 @@ export const projectsObject = [
     projectNum: 0,
   },
   {
-    shortTitle: "quiz",
-    imageSrc: "/flags.jpg",
-    alt: "Guess the flag quiz",
-    fullTitle: "Guess the Flag Quiz",
-    demoHref: "https://ivanmpr.github.io/Guess-the-Flag-FV/",
-    codeHref: "https://github.com/IvanMPR/Guess-the-Flag-FV",
-    description: `This is a fun quiz app where you can learn almost every flag
-    that is used in the world today! You can play in three different
-    languages...`,
+    shortTitle: "hangman",
+    imageSrc: "/hangman.jpg",
+    alt: "Hangman game",
+    fullTitle: "Hangman game",
+    demoHref: "https://ivanmpr.github.io/Hangman-game/",
+    codeHref: "https://github.com/IvanMPR/Hangman-game",
+    description: `The goal of the game is to guess the hidden city name. Player has max of 10 attempts. For every miss, one additional part of the body is hanged...`,
     projectNum: 1,
   },
   {
@@ -36,6 +34,19 @@ export const projectsObject = [
     projectNum: 2,
   },
   {
+    shortTitle: "quiz",
+    imageSrc: "/flags.jpg",
+    alt: "Guess the flag quiz",
+    fullTitle: "Guess the Flag Quiz",
+    demoHref: "https://ivanmpr.github.io/Guess-the-Flag-FV/",
+    codeHref: "https://github.com/IvanMPR/Guess-the-Flag-FV",
+    description: `This is a fun quiz app where you can learn almost every flag
+    that is used in the world today! You can play in three different
+    languages...`,
+    projectNum: 3,
+  },
+
+  {
     shortTitle: "weather",
     imageSrc: "/weather.jpg",
     alt: "Weather app",
@@ -44,18 +55,53 @@ export const projectsObject = [
     codeHref: "https://github.com/IvanMPR/Weather-app",
     description: `Weather app is responsive, and works behind the scene with two
     third party API-s...`,
-    projectNum: 3,
+    projectNum: 4,
   },
 
   {
-    shortTitle: "calculator",
-    imageSrc: "/calculator.jpg",
-    alt: "JS Calculator",
-    fullTitle: "JS Calculator",
-    demoHref: "https://ivanmpr.github.io/Calculator/",
-    codeHref: "https://github.com/IvanMPR/Calculator",
-    description: `One of the JavaScript classics, calculator with button
-    sounds`,
-    projectNum: 4,
+    shortTitle: "tic-tac-toe",
+    imageSrc: "/tic-tac-toe.jpg",
+    alt: "Tic Tac Toe game",
+    fullTitle: "Tic Tac Toe",
+    demoHref: "https://tic-tac-toe-online-multiplayer-game.onrender.com",
+    codeHref: "https://github.com/IvanMPR/tic-tac-toe",
+    description: `Online multiplayer game of Tic Tac Toe, created using NodeJS,
+      Express and Socket.io. Deployed on Render.com.`,
+    projectNum: 5,
+  },
+
+  {
+    shortTitle: "memory",
+    imageSrc: "/memory-online.jpg",
+    alt: "Memory Multiplayer game",
+    fullTitle: "Memory Multiplayer",
+    demoHref: "https://multiplayer-memory-game.onrender.com",
+    codeHref: "https://github.com/IvanMPR/memory-multiplayer",
+    description: `Online two player Memory Game, created using NodeJS, Express and Socket.io. Deployed on Render.com.`,
+    projectNum: 6,
+  },
+
+  {
+    shortTitle: "BFS",
+    imageSrc: "/bfs.jpg",
+    alt: "Breadth first search algo",
+    fullTitle: "BFS and shortest path algo",
+    demoHref: "https://ivanmpr.github.io/BFS/",
+    codeHref: "https://github.com/IvanMPR/BFS",
+    description: `BFS algo. Place the start and end points, place the walls optionally, and click on the Start button. The shortest path will be shown...`,
+    projectNum: 7,
+  },
+
+  {
+    shortTitle: "lines",
+    imageSrc: "/lines.jpg",
+    alt: "Lines game",
+    fullTitle: "Lines game",
+    demoHref: "https://ivanmpr.github.io/Lines-FULL/",
+    codeHref: "https://github.com/IvanMPR/Lines-FULL",
+    description: `BFS algo. Make a line of 5 or more consecutive balls of the same
+    color (in a row, column or diagonally), in order to clear them
+    of the board and earn points...`,
+    projectNum: 8,
   },
 ];

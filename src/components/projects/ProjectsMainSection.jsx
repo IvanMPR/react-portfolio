@@ -9,7 +9,7 @@ import SectionContent from "../miscellaneous/SectionContent";
 import ProjectsSubtitle from "./ProjectsSubtitle";
 
 import { projectsObject } from "../../projects";
-import { projectsAdvancedObject } from "../../projectsAdvanced";
+// import { projectsAdvancedObject } from "../../projectsAdvanced";
 
 import { begToIntIcons, intToAdvIcons } from "./icons";
 import Modal from "../miscellaneous/Modal";
@@ -30,26 +30,11 @@ function ProjectsMainSection() {
       />
 
       <SectionContent prefix="projects">
-        <ProjectsSubtitle
-          heading={"Level: beginner to intermediate"}
-          iconSet={begToIntIcons}
-        />
+        <ProjectsSubtitle heading={""} iconSet={begToIntIcons} />
+
         <ProjectsFrame
           arrayOfProjects={projectsObject}
           isRowReversed={"false"}
-          isZoomed={isZoomed}
-          setIsZoomed={setIsZoomed}
-          zoomedImageSrc={zoomedImageSrc}
-          setZoomedImageSrc={setZoomedImageSrc}
-        />
-
-        <ProjectsSubtitle
-          heading={"Level: intermediate to advanced"}
-          iconSet={intToAdvIcons}
-        />
-        <ProjectsFrame
-          arrayOfProjects={projectsAdvancedObject}
-          isRowReversed={"true"}
           isZoomed={isZoomed}
           setIsZoomed={setIsZoomed}
           zoomedImageSrc={zoomedImageSrc}

@@ -36,6 +36,27 @@ export const begToIntIcons = [
     className: "tech-icons",
   },
   {
+    name: "Node JS",
+    src: "/svg/nodejs.svg",
+    alt: "Node JS icon",
+    title: "Node JS icon",
+    className: "tech-icons",
+  },
+  {
+    name: "Express JS",
+    src: "/svg/express.svg",
+    alt: "Express icon",
+    title: "Express icon",
+    className: "tech-icons",
+  },
+  {
+    name: "Socket.io",
+    src: "/svg/socket-io.svg",
+    alt: "Socket.io icon",
+    title: "Socket.io icon",
+    className: "tech-icons",
+  },
+  {
     name: "Adobe Illustrator",
     src: "/svg/illustrator.svg",
     alt: "Illustrator icon",

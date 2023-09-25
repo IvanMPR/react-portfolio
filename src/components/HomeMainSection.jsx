@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function HomeMainSection() {
   return (
     <>
@@ -12,9 +14,9 @@ function HomeMainSection() {
             </span>
           </h1>
           <div className="home__main-btn wrapper-l">
-            <a href="#contact" className="btn btn__contact">
+            <Link to="contact" className="btn btn__contact">
               Contact me
-            </a>
+            </Link>
           </div>
         </div>
         <div className="home__main-image">

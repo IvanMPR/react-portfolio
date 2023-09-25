@@ -3,7 +3,7 @@ import { faBan } from "@fortawesome/free-solid-svg-icons";
 
 function PageNotFound() {
   return (
-    <div className="not-found container wrapper-l">
+    <div className="not-found">
       <p className="not-found__text">
         Page Not Found! Use navigation links to go back to existing content !
       </p>
