@@ -8,8 +8,9 @@ import NavMenu from "./NavMenu";
 import NavRight from "./NavRight";
 import NavLinks from "./NavLinks";
 
-function Header() {
-  const [colorTheme, setColorTheme] = useState("default");
+function Header({colorTheme, setColorTheme}) {
+  const [checked, setChecked] = useState(false);
+  
   const location = useLocation();
 
   useEffect(() => {
@@ -23,9 +24,9 @@ function Header() {
 
   return (
     <header className="header">
-      <Nav>
+      <Nav checked={checked} setChecked={setChecked}>
         <NavLeft colorTheme={colorTheme} setColorTheme={setColorTheme} />
-        <NavMenu />
+        <NavMenu checked={checked} setChecked={setChecked} />
 
         <NavRight>
           <NavLinks />

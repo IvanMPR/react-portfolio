@@ -1,44 +1,18 @@
-import { Link } from "react-router-dom";
+import TopMenuLink from "./TopMenuLink";
 
-function TopMenu() {
+const paths = ["/", "projects", "about", "contact"];
+
+function TopMenu({ setChecked, path }) {
   return (
     <div className="top-menu">
-      <div className="top-menu__link-container">
-        <Link
-          to="/"
-          className="top-menu__a top-menu__links"
-          title="Home section link"
-        >
-          home
-        </Link>
-      </div>
-      <div className="top-menu__link-container">
-        <Link
-          to="/projects"
-          className="top-menu__a top-menu__links"
-          title="Projects section link"
-        >
-          projects
-        </Link>
-      </div>
-      <div className="top-menu__link-container">
-        <Link
-          to="/about"
-          className="top-menu__a top-menu__links"
-          title="About section link"
-        >
-          about
-        </Link>
-      </div>
-      <div className="top-menu__link-container">
-        <Link
-          to="/contact"
-          className="top-menu__a top-menu__links"
-          title="Contact section link"
-        >
-          contact
-        </Link>
-      </div>
+      {paths.map((route) => (
+        <TopMenuLink
+          key={route}
+          path={route}
+          title={path}
+          onClick={() => setChecked(false)}
+        />
+      ))}
     </div>
   );
 }

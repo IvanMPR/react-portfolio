@@ -7,11 +7,22 @@ import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import PageNotFound from "./pages/PageNotFound";
 import Header from "./components/header/Header";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [colorTheme, setColorTheme] = useState("default");
+
+  useEffect(() => {
+    if (colorTheme === "default") {
+      document.body.dataset.theme = "default";
+    } else {
+      document.body.dataset.theme = "dark";
+    }
+  }, [colorTheme]);
+
   return (
     <BrowserRouter>
-      <Header />
+      <Header colorTheme={colorTheme} setColorTheme={setColorTheme} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
