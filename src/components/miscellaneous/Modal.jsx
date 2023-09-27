@@ -3,7 +3,7 @@ function Modal({ src, setIsZoomed }) {
     setIsZoomed((prev) => !prev);
   }
   return (
-    <div className="modal-container" onClick={handleZoom}>
+    <div className="modal__container" onClick={handleZoom}>
       <div className="modal__zoom--content add-width">
         <img src={src} alt="" className="zoomed-img" />
       </div>

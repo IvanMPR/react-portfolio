@@ -10,13 +10,17 @@ import Header from "./components/header/Header";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [colorTheme, setColorTheme] = useState("default");
+  const [colorTheme, setColorTheme] = useState(
+    () => localStorage.getItem("theme") || "default"
+  );
 
   useEffect(() => {
     if (colorTheme === "default") {
       document.body.dataset.theme = "default";
+      localStorage.setItem("theme", "default");
     } else {
       document.body.dataset.theme = "dark";
+      localStorage.setItem("theme", "dark");
     }
   }, [colorTheme]);
 

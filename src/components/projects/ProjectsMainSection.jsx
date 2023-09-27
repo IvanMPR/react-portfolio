@@ -17,6 +17,7 @@ import Modal from "../miscellaneous/Modal";
 function ProjectsMainSection() {
   const [isZoomed, setIsZoomed] = useState(false);
   const [zoomedImageSrc, setZoomedImageSrc] = useState("");
+  const [currentImage, setCurrentImage] = useState(0);
 
   return isZoomed ? (
     <Modal src={zoomedImageSrc} setIsZoomed={setIsZoomed} />
@@ -39,6 +40,8 @@ function ProjectsMainSection() {
           setIsZoomed={setIsZoomed}
           zoomedImageSrc={zoomedImageSrc}
           setZoomedImageSrc={setZoomedImageSrc}
+          currentImage={currentImage}
+          setCurrentImage={setCurrentImage}
         />
       </SectionContent>
     </section>

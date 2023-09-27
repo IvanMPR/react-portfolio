@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 import Project from "./Project";
 import ProjectsDotContainer from "./ProjectsDotContainer";
@@ -10,8 +10,10 @@ function ProjectsFrame({
   setIsZoomed,
   zoomedImageSrc,
   setZoomedImageSrc,
+  currentImage,
+  setCurrentImage,
 }) {
-  const [currentImage, setCurrentImage] = useState(0);
+  // const [currentImage, setCurrentImage] = useState(0);
   const threshold = arrayOfProjects.length - 1;
 
   const handleLeftArrowClick = () => {

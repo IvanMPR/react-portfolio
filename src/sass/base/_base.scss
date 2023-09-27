@@ -1,5 +1,5 @@
-@use '../abstracts/' as *;
-@use './typography' as *;
+@use "../abstracts/" as *;
+@use "./typography" as *;
 
 *,
 *::after,
@@ -44,11 +44,9 @@ body {
   background-color: var(--color-bg);
   box-sizing: border-box;
   font-family: var(--main-font);
-  //   padding: 2rem;
-  // height: 150rem;
   transition: background-color 0.15s;
-
   overflow-x: hidden;
+  scrollbar-gutter: stable;
 }
 
 a {

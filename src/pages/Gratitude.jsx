@@ -12,7 +12,7 @@ function Gratitude() {
   const navigate = useNavigate();
   const { remainingTime } = useCountdown({
     isPlaying: true,
-    duration: 3,
+    duration: 4,
     colors: "var(--color-primary)",
   });
 
@@ -24,7 +24,6 @@ function Gratitude() {
 
   return (
     <>
-      {/* <Header /> */}
       <div className="thanks">
         <h2 className="thanks__h2">Thank you !</h2>
         <div className="thanks__icon">
@@ -39,7 +38,7 @@ function Gratitude() {
         <div className="thanks__timer">
           <CountdownCircleTimer
             isPlaying
-            duration={3}
+            duration={4}
             colors="var(--color-primary)"
             onComplete={() => ({ shouldRepeat: false })}
           >
@@ -60,3 +59,4 @@ function Gratitude() {
 }
 
 export default Gratitude;
+// q: why does this component not accepting body data theme properly ?
