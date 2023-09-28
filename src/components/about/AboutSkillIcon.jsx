@@ -1,4 +1,12 @@
 function AboutSkillIcon({ skill }) {
+  let src;
+
+  if (skill !== "react") {
+    src = `/svg/${skill}.svg`;
+  } else {
+    src = "/img/react.png";
+  }
+
   return (
     <span className="skill-icon">
       <img

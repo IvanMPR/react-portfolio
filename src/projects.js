@@ -66,7 +66,7 @@ export const projectsObject = [
     demoHref: "https://tic-tac-toe-online-multiplayer-game.onrender.com",
     codeHref: "https://github.com/IvanMPR/tic-tac-toe",
     description: `Online multiplayer game of Tic Tac Toe, created using NodeJS,
-      Express and Socket.io. Deployed on Render.com.`,
+      Express and Socket.io. Deployed on Render.com. Might take a while to load, be patient please...`,
     projectNum: 5,
   },
 
@@ -77,7 +77,7 @@ export const projectsObject = [
     fullTitle: "Memory Multiplayer",
     demoHref: "https://multiplayer-memory-game.onrender.com",
     codeHref: "https://github.com/IvanMPR/memory-multiplayer",
-    description: `Online two player Memory Game, created using NodeJS, Express and Socket.io. Deployed on Render.com.`,
+    description: `Online two player Memory Game, created using NodeJS, Express and Socket.io. Deployed on Render.com.   Might take a while to load, be patient please...`,
     projectNum: 6,
   },
 

@@ -19,6 +19,7 @@
   height: 100%;
   z-index: 10000;
   background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
   transition: all 0.9s;
 
   .zoomed-img {

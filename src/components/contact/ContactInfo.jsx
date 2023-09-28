@@ -14,7 +14,7 @@ function ContactInfo() {
       </div>
       <div className="info-div info-email">
         <FontAwesomeIcon icon={faEnvelope} className="fa-solid" />
-        <div className="info-p">ivsanmas@gmail.com</div>
+        <div className="info-p">contact@ivanmiceta.dev</div>
       </div>
       <div className="info-div info-location">
         <FontAwesomeIcon icon={faMapLocationDot} className="fa-solid" />

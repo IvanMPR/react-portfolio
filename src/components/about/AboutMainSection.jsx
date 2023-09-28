@@ -7,6 +7,9 @@ import { generalParagraphs, skillsParagraphs } from "./AboutTextContent";
 import AboutSkillRow from "./AboutSkillRow";
 import AboutSkillIcon from "./AboutSkillIcon";
 import AboutSkillBar from "./AboutSkillBar";
+import AboutAdditionalInfo from "./AboutAdditionalInfo";
+import AboutAdditionalInfoCodewars from "./AboutAdditionalInfoCodewars";
+import AboutAdditionalInfoResume from "./AboutAdditionalInfoResume";
 
 function AboutMainSection() {
   return (
@@ -41,8 +44,10 @@ function AboutMainSection() {
             </div>
           </div>
         </div>
+        <AboutAdditionalInfo>
+          <AboutAdditionalInfoCodewars />
+        </AboutAdditionalInfo>
         <div className="about-section__content--pair about-section__content--middle">
-          <div className="background"></div>
           <div className="about-section__content--left">
             <h3 className="about-subtitle wrapper-l">Skills & certificates</h3>
             <p className="left-skills__para">
@@ -51,15 +56,16 @@ function AboutMainSection() {
               learning web development.
             </p>
 
-            {skillsParagraphs.map(({ skill }) => (
+            {skillsParagraphs.map(({ skill, level }) => (
               <div className="left-skills" key={skill}>
                 <AboutSkillRow skill={skill}>
                   <AboutSkillIcon skill={skill} />
-                  <AboutSkillBar skill={skill} />
+                  <AboutSkillBar skill={skill} level={level} />
                 </AboutSkillRow>
               </div>
             ))}
           </div>
+
           <div className="about-section__content--right">
             <div className="right-skills container">
               <div className="cert-title">
@@ -147,6 +153,9 @@ function AboutMainSection() {
             </div>
           </div>
         </div>
+        <AboutAdditionalInfo>
+          <AboutAdditionalInfoResume />
+        </AboutAdditionalInfo>
         <div className="about-section__content--pair">
           <div className="about-section__content--left">
             <h3 className="about-subtitle wrapper-l">Personal & bio</h3>
@@ -168,7 +177,7 @@ function AboutMainSection() {
                   I was a
                   <a
                     rel="noopener noreferrer"
-                    href="http://archive.fiba.com/pages/eng/fa/team/p/sid/2311/tid/390/tid2/307/_/1997_European_Championship_for_Cadets/index.html"
+                    href="https://archive.fiba.com/pages/eng/fa/team/p/sid/2311/tid/390/_/1997_European_Championship_for_Cadets/index.html"
                     target="_blank"
                     title="Link to Fiba archive website"
                   >
@@ -183,7 +192,7 @@ function AboutMainSection() {
                     rel="noopener noreferrer"
                     href="https://www.spak.edu.rs/english/"
                     target="_blank"
-                    title="Link to Sportsk Akademija"
+                    title="Link to Sportska Akademija"
                   >
                     Sportska Akademija
                   </a>

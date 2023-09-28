@@ -13,20 +13,53 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    // background-color: aquamarine;
     position: relative;
 
     &--pair {
-      // background-color: #3f7731;
-      // position: relative;
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      // margin-bottom: 5rem;
-      // &:nth-child(2) {
-      //   background-color: var(--color-bg-offset);
-      // }
+
+      .additional__info {
+        min-height: 15rem;
+        padding: 1rem;
+        color: var(--color-text);
+        color: #fff;
+        border-radius: 2rem;
+        width: 100%;
+        background-color: var(--color-secondary);
+        margin: 3rem 0;
+        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
+
+        &--title {
+          font-size: var(--font-normal);
+          font-style: italic;
+          text-align: center;
+          margin-bottom: 1rem;
+        }
+
+        &--span {
+          font-style: normal;
+          margin: 0 0.5rem;
+        }
+
+        &--para {
+          font-size: var(--font-normal);
+          margin: 1rem 0;
+          text-align: center;
+        }
+
+        &--link {
+          text-align: center;
+        }
+
+        .punchline {
+          font-size: var(--font-normal);
+          font-style: italic;
+          color: var(--color-text);
+        }
+      }
     }
 
     &--middle {
@@ -34,7 +67,6 @@
     }
 
     &--left {
-      // background-color: #4c6960;
       width: 50%;
 
       .about-subtitle {
@@ -42,9 +74,10 @@
         color: var(--color-text);
         font-style: italic;
       }
+      // redundant ???
       .left-intro {
         // width: 50%;
-
+        // redundant ???
         &__para {
           color: var(--color-text);
           font-size: var(--font-normal);
@@ -94,41 +127,6 @@
             display: flex;
             align-items: center;
 
-            .inner-html5 {
-              width: 80%;
-            }
-
-            .inner-css3 {
-              width: 80%;
-            }
-
-            .inner-js {
-              width: 85%;
-            }
-
-            .inner-sass {
-              width: 70%;
-            }
-
-            .inner-react {
-              width: 70%;
-            }
-
-            .inner-illustrator {
-              width: 85%;
-            }
-
-            .inner-socketio {
-              width: 50%;
-            }
-
-            .inner-nodejs {
-              width: 40%;
-            }
-
-            .inner-express {
-              width: 40%;
-            }
             // inner - skill bar
             &-inner {
               // width: 80%;
@@ -137,6 +135,42 @@
               border-radius: 0.5rem;
               margin-left: 2px;
             }
+
+            // .inner-html5 {
+            //   width: 80%;
+            // }
+
+            // .inner-css3 {
+            //   width: 80%;
+            // }
+
+            // .inner-js {
+            //   width: 85%;
+            // }
+
+            // .inner-sass {
+            //   width: 70%;
+            // }
+
+            // .inner-react {
+            //   width: 70%;
+            // }
+
+            // .inner-illustrator {
+            //   width: 85%;
+            // }
+
+            // .inner-socket-io {
+            //   width: 50%;
+            // }
+
+            // .inner-nodejs {
+            //   width: 40%;
+            // }
+
+            // .inner-express {
+            //   width: 40%;
+            // }
           }
         }
       }
