@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Home from "./pages/Home";
@@ -7,7 +8,6 @@ import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import PageNotFound from "./pages/PageNotFound";
 import Header from "./components/header/Header";
-import { useEffect, useState } from "react";
 
 function App() {
   const [colorTheme, setColorTheme] = useState(

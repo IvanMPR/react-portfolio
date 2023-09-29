@@ -4,14 +4,15 @@ function AboutSkillIcon({ skill }) {
   if (skill !== "react") {
     src = `/svg/${skill}.svg`;
   } else {
-    src = "/img/react.png";
+    src = "/icons/react.png";
   }
 
   return (
     <span className="skill-icon">
       <img
         className="skill-icon-svg"
-        src={`/svg/${skill}.svg`}
+        // src={`/svg/${skill}.svg`}
+        src={src}
         title={`${skill} icon`}
         alt={`${skill} icon`}
       />

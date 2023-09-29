@@ -9,9 +9,8 @@ import SectionContent from "../miscellaneous/SectionContent";
 import ProjectsSubtitle from "./ProjectsSubtitle";
 
 import { projectsObject } from "../../projects";
-// import { projectsAdvancedObject } from "../../projectsAdvanced";
+import { begToIntIcons } from "./icons";
 
-import { begToIntIcons, intToAdvIcons } from "./icons";
 import Modal from "../miscellaneous/Modal";
 
 function ProjectsMainSection() {
@@ -35,7 +34,6 @@ function ProjectsMainSection() {
 
         <ProjectsFrame
           arrayOfProjects={projectsObject}
-          isRowReversed={"false"}
           isZoomed={isZoomed}
           setIsZoomed={setIsZoomed}
           zoomedImageSrc={zoomedImageSrc}

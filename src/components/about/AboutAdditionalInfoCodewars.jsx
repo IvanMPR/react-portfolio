@@ -2,8 +2,7 @@ function AboutAdditionalInfoCodewars() {
   return (
     <div className="additional__info">
       <p className="additional__info--title">
-        Worth to mention:
-        <span className="additional__info--span">🤔</span>
+        Worth to mention :<span className="additional__info--span">🤔</span>
       </p>
       <p className="additional__info--para">
         One of the most important places where I spent menu hours in the process
@@ -19,8 +18,9 @@ function AboutAdditionalInfoCodewars() {
           rel="noreferrer"
         >
           <img
-            alt=""
-            src="https://www.codewars.com/users/IvanMPR/badges/large"
+            alt="Codewars badge"
+            title="Codewars badge"
+            src="https://www.codewars.com/users/IvanMPR/badges/small"
           />
         </a>
       </div>
