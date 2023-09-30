@@ -10,7 +10,6 @@ import ContactForm from "./ContactForm";
 function ContactMainSection() {
   return (
     <section className="contact-section container" id="contact">
-      {/* <div className="background"></div> */}
       <SectionTitle
         title="Contact"
         icon={

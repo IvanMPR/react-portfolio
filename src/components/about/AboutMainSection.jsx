@@ -145,7 +145,7 @@ function AboutMainSection() {
                   <img
                     className="certificate__img"
                     src="https://udemy-certificate.s3.amazonaws.com/image/UC-78309db0-9ec5-4a53-9b4b-8ecadbd8baf2.jpg"
-                    alt="Jonas Shmedtman course"
+                    alt="Jonas Schmedtman course"
                     title="Click to enlarge certificate"
                   />
                 </a>
