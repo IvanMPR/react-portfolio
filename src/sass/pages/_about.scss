@@ -6,7 +6,6 @@
 }
 
 .about-section {
-  // background-color: blanchedalmond;
   // margin-top: -3rem;
 
   &__content {
@@ -102,7 +101,6 @@
           flex-direction: row-reverse;
           align-items: center;
           justify-content: space-between;
-          // background-color: aqua;
 
           .skill-icon {
             display: block;
@@ -125,48 +123,12 @@
 
             // inner - skill bar
             &-inner {
-              // width: 80%;
+              // width is set separately for each skill;
               height: 5px;
               background-color: var(--color-primary);
               border-radius: 0.5rem;
               margin-left: 2px;
             }
-
-            // .inner-html5 {
-            //   width: 80%;
-            // }
-
-            // .inner-css3 {
-            //   width: 80%;
-            // }
-
-            // .inner-js {
-            //   width: 85%;
-            // }
-
-            // .inner-sass {
-            //   width: 70%;
-            // }
-
-            // .inner-react {
-            //   width: 70%;
-            // }
-
-            // .inner-illustrator {
-            //   width: 85%;
-            // }
-
-            // .inner-socket-io {
-            //   width: 50%;
-            // }
-
-            // .inner-nodejs {
-            //   width: 40%;
-            // }
-
-            // .inner-express {
-            //   width: 40%;
-            // }
           }
         }
       }
@@ -236,10 +198,6 @@
 
       .certificate {
         width: 35%;
-        // background-color: chartreuse;
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
 
         &__img {
           width: 100%;
