@@ -11,7 +11,6 @@ function AboutSkillIcon({ skill }) {
     <span className="skill-icon">
       <img
         className="skill-icon-svg"
-        // src={`/svg/${skill}.svg`}
         src={src}
         title={`${skill} icon`}
         alt={`${skill} icon`}
