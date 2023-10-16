@@ -5,7 +5,13 @@ function Modal({ src, setIsZoomed }) {
   return (
     <div className="modal__container" onClick={handleZoom}>
       <div className="modal__zoom--content add-width">
-        <img src={src} alt="" className="zoomed-img" />
+        <img
+          src={src}
+          alt=""
+          className={`${
+            src.endsWith("mix.jpg") ? "zoomed-img-collage" : "zoomed-img"
+          }`}
+        />
       </div>
     </div>
   );

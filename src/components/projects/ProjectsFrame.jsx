@@ -1,6 +1,12 @@
 import Project from "./Project";
 import ProjectsDotContainer from "./ProjectsDotContainer";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
+
 function ProjectsFrame({
   isRowReversed,
   arrayOfProjects,
@@ -24,10 +30,10 @@ function ProjectsFrame({
   return (
     <div className="frame">
       <div className="frame-arrow__left" onClick={handleLeftArrowClick}>
-        <i className="fas fa-chevron-left fa-5x" title="Previous project"></i>
+        <FontAwesomeIcon icon={faChevronLeft} className="fa-solid" size="5x" />
       </div>
       <div className="frame-arrow__right" onClick={handleRightArrowClick}>
-        <i className="fas fa-chevron-right fa-5x" title="Next project"></i>
+        <FontAwesomeIcon icon={faChevronRight} className="fa-solid" size="5x" />
       </div>
 
       {arrayOfProjects.map((project, i) => (

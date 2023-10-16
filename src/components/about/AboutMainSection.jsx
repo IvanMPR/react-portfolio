@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserTie } from "@fortawesome/free-solid-svg-icons";
 
@@ -11,8 +13,17 @@ import AboutAdditionalInfo from "./AboutAdditionalInfo";
 import AboutAdditionalInfoCodewars from "./AboutAdditionalInfoCodewars";
 import AboutAdditionalInfoResume from "./AboutAdditionalInfoResume";
 
+import Modal from "../miscellaneous/Modal";
+
 function AboutMainSection() {
-  return (
+  const [isCollageZoomed, setIsCollageZoomed] = useState(false);
+
+  function handleCollageImageZoom(e) {
+    setIsCollageZoomed((prev) => !prev);
+  }
+  return isCollageZoomed ? (
+    <Modal src="/mix.jpg" setIsZoomed={setIsCollageZoomed} />
+  ) : (
     <section className="about-section container" id="about">
       <SectionTitle
         title="About me"
@@ -263,6 +274,7 @@ function AboutMainSection() {
               className="collage"
               src="/mix.jpg"
               alt="Collage of personal images"
+              onClick={handleCollageImageZoom}
             />
           </div>
         </div>
