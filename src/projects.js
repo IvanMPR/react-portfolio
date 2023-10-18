@@ -1,7 +1,7 @@
 export const projectsObject = [
   {
     shortTitle: "shootout",
-    imageSrc: "/shooting.jpg",
+    imageSrc: "/projectsThumbnails/shooting.jpg",
     alt: "Shootout game",
     fullTitle: "Shootout game",
     demoHref: "https://ivanmpr.github.io/Whack-a-Mole/",
@@ -13,7 +13,7 @@ export const projectsObject = [
   },
   {
     shortTitle: "hangman",
-    imageSrc: "/hangman.jpg",
+    imageSrc: "/projectsThumbnails/hangman.jpg",
     alt: "Hangman game",
     fullTitle: "Hangman game",
     demoHref: "https://ivanmpr.github.io/Hangman-game/",
@@ -23,7 +23,7 @@ export const projectsObject = [
   },
   {
     shortTitle: "europe",
-    imageSrc: "/map.jpg",
+    imageSrc: "/projectsThumbnails/map.jpg",
     alt: "European countries map",
     fullTitle: "European countries",
     demoHref: "https://ivanmpr.github.io/Europe-Map-Project/",
@@ -35,7 +35,7 @@ export const projectsObject = [
   },
   {
     shortTitle: "quiz",
-    imageSrc: "/flags.jpg",
+    imageSrc: "/projectsThumbnails/flags.jpg",
     alt: "Guess the flag quiz",
     fullTitle: "Guess the Flag Quiz",
     demoHref: "https://ivanmpr.github.io/Guess-the-Flag-FV/",
@@ -48,7 +48,7 @@ export const projectsObject = [
 
   {
     shortTitle: "weather",
-    imageSrc: "/weather.jpg",
+    imageSrc: "/projectsThumbnails/weather.jpg",
     alt: "Weather app",
     fullTitle: "Weather app",
     demoHref: "https://ivanmpr.github.io/Weather-app/",
@@ -60,7 +60,7 @@ export const projectsObject = [
 
   {
     shortTitle: "tic-tac-toe",
-    imageSrc: "/tic-tac-toe.jpg",
+    imageSrc: "/projectsThumbnails/tic-tac-toe.jpg",
     alt: "Tic Tac Toe game",
     fullTitle: "Tic Tac Toe",
     demoHref: "https://tic-tac-toe-online-multiplayer-game.onrender.com",
@@ -72,7 +72,7 @@ export const projectsObject = [
 
   {
     shortTitle: "memory",
-    imageSrc: "/memory-online.jpg",
+    imageSrc: "/projectsThumbnails/memory-online.jpg",
     alt: "Memory Multiplayer game",
     fullTitle: "Memory Multiplayer",
     demoHref: "https://multiplayer-memory-game.onrender.com",
@@ -83,7 +83,7 @@ export const projectsObject = [
 
   {
     shortTitle: "BFS",
-    imageSrc: "/bfs.jpg",
+    imageSrc: "/projectsThumbnails/bfs.jpg",
     alt: "Breadth first search algo",
     fullTitle: "BFS and shortest path algo",
     demoHref: "https://ivanmpr.github.io/BFS/",
@@ -94,7 +94,7 @@ export const projectsObject = [
 
   {
     shortTitle: "lines",
-    imageSrc: "/lines.jpg",
+    imageSrc: "/projectsThumbnails/lines.jpg",
     alt: "Lines game",
     fullTitle: "Lines game",
     demoHref: "https://ivanmpr.github.io/Lines-FULL/",

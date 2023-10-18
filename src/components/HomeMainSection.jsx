@@ -20,7 +20,7 @@ function HomeMainSection() {
           </div>
         </div>
         <div className="home__main-image">
-          <img src="/blob5test.jpg" alt="test" className="main__blob" />
+          <img src="/images/blob5test.jpg" alt="test" className="main__blob" />
         </div>
       </main>
     </>

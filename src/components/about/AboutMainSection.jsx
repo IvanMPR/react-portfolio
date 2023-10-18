@@ -18,11 +18,11 @@ import Modal from "../miscellaneous/Modal";
 function AboutMainSection() {
   const [isCollageZoomed, setIsCollageZoomed] = useState(false);
 
-  function handleCollageImageZoom(e) {
+  function handleCollageImageZoom() {
     setIsCollageZoomed((prev) => !prev);
   }
   return isCollageZoomed ? (
-    <Modal src="/mix.jpg" setIsZoomed={setIsCollageZoomed} />
+    <Modal src="/images/mix.jpg" setIsZoomed={setIsCollageZoomed} />
   ) : (
     <section className="about-section container" id="about">
       <SectionTitle
@@ -51,7 +51,7 @@ function AboutMainSection() {
           </div>
           <div className="about-section__content--right">
             <div className="right-intro__img">
-              <img src="/blob5fixed.png" alt="test" className="blob2" />
+              <img src="/images/blob5fixed.png" alt="test" className="blob2" />
             </div>
           </div>
         </div>
@@ -272,7 +272,7 @@ function AboutMainSection() {
           <div className="about-section__content--right">
             <img
               className="collage"
-              src="/mix.jpg"
+              src="/images/mix.jpg"
               alt="Collage of personal images"
               onClick={handleCollageImageZoom}
             />
