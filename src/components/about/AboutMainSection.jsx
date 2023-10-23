@@ -5,15 +5,15 @@ import { faUserTie } from "@fortawesome/free-solid-svg-icons";
 
 import AboutGeneralParagraph from "./AboutGeneralParagraph";
 import SectionTitle from "../miscellaneous/SectionTitle";
-import { generalParagraphs, skillsParagraphs } from "./AboutTextContent";
 import AboutSkillRow from "./AboutSkillRow";
 import AboutSkillIcon from "./AboutSkillIcon";
 import AboutSkillBar from "./AboutSkillBar";
 import AboutAdditionalInfo from "./AboutAdditionalInfo";
 import AboutAdditionalInfoCodewars from "./AboutAdditionalInfoCodewars";
 import AboutAdditionalInfoResume from "./AboutAdditionalInfoResume";
-
 import Modal from "../miscellaneous/Modal";
+// Pair, Left , Right
+import { generalParagraphs, skillsParagraphs } from "./AboutTextContent";
 
 function AboutMainSection() {
   const [isCollageZoomed, setIsCollageZoomed] = useState(false);
