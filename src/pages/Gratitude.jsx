@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useCountdown } from "react-countdown-circle-timer";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 
-// import Header from "../components/header/Header";
+
 import { useEffect } from "react";
 
 function Gratitude() {
@@ -59,4 +59,4 @@ function Gratitude() {
 }
 
 export default Gratitude;
-// q: why does this component not accepting body data theme properly ?
+

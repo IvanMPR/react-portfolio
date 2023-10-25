@@ -21,8 +21,11 @@ import Modal from "../miscellaneous/Modal";
 
 import { generalParagraphs, skillsParagraphs } from "./AboutTextContent";
 import AboutContentPairRightCertificates from "./AboutContentPairRightCertificates";
+import Section from "../miscellaneous/Section";
 import SectionContent from "../miscellaneous/SectionContent";
 import AboutPersonal from "./AboutPersonal";
+import AboutCollageImage from "./AboutCollageImage";
+import AboutBlobImage from "./AboutBlobImage";
 
 function AboutMainSection() {
   const [isCollageZoomed, setIsCollageZoomed] = useState(false);
@@ -33,7 +36,7 @@ function AboutMainSection() {
   return isCollageZoomed ? (
     <Modal src="/images/mix.jpg" setIsZoomed={setIsCollageZoomed} />
   ) : (
-    <section className="about-section container" id="about">
+    <Section prefix="about">
       <SectionTitle
         title="About me"
         icon={
@@ -55,9 +58,7 @@ function AboutMainSection() {
             </div>
           </AboutContentPairLeft>
           <AboutContentPairRight>
-            <div className="right-intro__img">
-              <img src="/images/blob5fixed.png" alt="test" className="blob2" />
-            </div>
+            <AboutBlobImage />
           </AboutContentPairRight>
         </AboutContentPair>
         <AboutAdditionalInfo>
@@ -91,16 +92,13 @@ function AboutMainSection() {
             <AboutPersonal />
           </AboutContentPairLeft>
           <AboutContentPairRight>
-            <img
-              className="collage"
-              src="/images/mix.jpg"
-              alt="Collage of personal images"
-              onClick={handleCollageImageZoom}
+            <AboutCollageImage
+              handleCollageImageZoom={handleCollageImageZoom}
             />
           </AboutContentPairRight>
         </AboutContentPair>
       </SectionContent>
-    </section>
+    </Section>
   );
 }
 

@@ -12,6 +12,7 @@ import { projectsObject } from "../../projects";
 import { begToIntIcons } from "./icons";
 
 import Modal from "../miscellaneous/Modal";
+import Section from "../miscellaneous/Section";
 
 function ProjectsMainSection() {
   const [isZoomed, setIsZoomed] = useState(false);
@@ -21,7 +22,7 @@ function ProjectsMainSection() {
   return isZoomed ? (
     <Modal src={zoomedImageSrc} setIsZoomed={setIsZoomed} />
   ) : (
-    <section className="projects-section container" id="projects">
+    <Section prefix="projects">
       <SectionTitle
         title="Projects"
         icon={
@@ -42,7 +43,7 @@ function ProjectsMainSection() {
           setCurrentImage={setCurrentImage}
         />
       </SectionContent>
-    </section>
+    </Section>
   );
 }
 export default ProjectsMainSection;

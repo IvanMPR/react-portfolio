@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandPaper } from "@fortawesome/free-regular-svg-icons";
 
+import Section from "../miscellaneous/Section";
 import SectionTitle from "../miscellaneous/SectionTitle";
 import SectionContent from "../miscellaneous/SectionContent";
 
@@ -9,7 +10,7 @@ import ContactForm from "./ContactForm";
 
 function ContactMainSection() {
   return (
-    <section className="contact-section container" id="contact">
+    <Section prefix="contact">
       <SectionTitle
         title="Contact"
         icon={
@@ -23,7 +24,7 @@ function ContactMainSection() {
         <ContactInfo />
         <ContactForm />
       </SectionContent>
-    </section>
+    </Section>
   );
 }
 
