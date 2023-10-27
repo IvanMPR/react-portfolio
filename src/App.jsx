@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import { useAppContext } from "./contexts/AppContext";
 import { HeaderProvider } from "./contexts/HeaderContext.jsx";
 
 import Home from "./pages/Home";
@@ -12,12 +11,10 @@ import PageNotFound from "./pages/PageNotFound";
 import Header from "./components/header/Header";
 
 function App() {
-  const { colorTheme, setColorTheme } = useAppContext();
-
   return (
     <BrowserRouter>
       <HeaderProvider>
-        <Header colorTheme={colorTheme} setColorTheme={setColorTheme} />
+        <Header />
       </HeaderProvider>
       <Routes>
         <Route path="/" element={<Home />} />

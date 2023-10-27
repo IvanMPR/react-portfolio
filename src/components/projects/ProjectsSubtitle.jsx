@@ -1,11 +1,11 @@
 import ProjectSubtitleHeading from "./ProjectSubtitleHeading";
 import ProjectsSubtitleIconsSet from "./ProjectsSubtitleIconsSet";
 
-function ProjectsSubtitle({ heading, iconSet }) {
+function ProjectsSubtitle() {
   return (
     <div className="subtitle">
-      <ProjectSubtitleHeading heading={heading} />
-      <ProjectsSubtitleIconsSet iconSet={iconSet} />
+      <ProjectSubtitleHeading />
+      <ProjectsSubtitleIconsSet />
     </div>
   );
 }

@@ -1,6 +1,15 @@
+import { useProjectsContext } from "../../contexts/ProjectsContext";
 import ProjectsImage from "./ProjectsImage";
 
 function Project(props) {
+  const {
+    isZoomed,
+    setIsZoomed,
+    zoomedImageSrc,
+    setZoomedImageSrc,
+    currentImage,
+  } = useProjectsContext();
+
   const {
     shortTitle,
     imageSrc,
@@ -14,15 +23,7 @@ function Project(props) {
     description,
   } = props.project;
 
-  const {
-    currentImage,
-    i,
-    isRowReversed,
-    isZoomed,
-    setIsZoomed,
-    zoomedImageSrc,
-    setZoomedImageSrc,
-  } = props;
+  const { i } = props;
 
   return (
     <div
@@ -71,62 +72,3 @@ function Project(props) {
 }
 
 export default Project;
-/*
-<div
-      className={`project project-${shortTitle}`}
-      style={{
-        transform: `translateX(${100 * (i - currentImage)}%)`,
-        flexDirection: isRowReversed === "true" ? "row-reverse" : "row",
-      }}
-    >
-      <div
-        className="project-left"
-        style={{
-          paddingLeft: isRowReversed === "true" ? "0" : "5rem",
-          paddingRight: isRowReversed === "true" ? "5rem" : "0",
-        }}
-      >
-        <div className="project-left__image-container wrapper">
-          <ProjectsImage
-            imageSrc={imageSrc}
-            title={title}
-            alt={alt}
-            isZoomed={isZoomed}
-            setIsZoomed={setIsZoomed}
-            zoomedImageSrc={zoomedImageSrc}
-            setZoomedImageSrc={setZoomedImageSrc}
-          />
-        </div>
-      </div>
-      <div
-        className="project-right"
-        style={{
-          paddingRight: isRowReversed === "true" ? "0" : "5rem",
-          paddingLeft: isRowReversed === "true" ? "5rem" : "0",
-        }}
-      >
-        <h3 className="project-right__title">{fullTitle}</h3>
-        <div className="project-right__container">
-          <a
-            rel="noreferrer"
-            target="_blank"
-            href={demoHref}
-            title={demoTitle}
-            className="project-right__container-link project-right__demo"
-          >
-            Demo
-          </a>
-          <a
-            rel="noreferrer"
-            href={codeHref}
-            target="_blank"
-            title={codeTitle}
-            className="project-right__container-link project-right__code"
-          >
-            Source code
-          </a>
-        </div>
-        <p className="project-right__description">{description}</p>
-      </div>
-    </div>
-    */

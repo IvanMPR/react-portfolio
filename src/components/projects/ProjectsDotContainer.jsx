@@ -1,10 +1,9 @@
+import { useProjectsContext } from "../../contexts/ProjectsContext";
 import ProjectsDot from "./ProjectsDot";
 
-function ProjectsDotContainer({
-  arrayOfProjects,
-  currentImage,
-  setCurrentImage,
-}) {
+function ProjectsDotContainer() {
+  const { currentImage, setCurrentImage, arrayOfProjects } =
+    useProjectsContext();
   return (
     <div className="dots-container">
       {arrayOfProjects.map((_, i) => (

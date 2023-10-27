@@ -1,15 +1,18 @@
-function Modal({ src, setIsZoomed }) {
-  function handleZoom() {
-    setIsZoomed((prev) => !prev);
-  }
+import { useProjectsContext } from "../../contexts/ProjectsContext";
+
+function Modal() {
+  const { zoomedImageSrc, handleZoom } = useProjectsContext();
+
   return (
     <div className="modal__container" onClick={handleZoom}>
       <div className="modal__zoom--content add-width">
         <img
-          src={src}
+          src={zoomedImageSrc}
           alt=""
           className={`${
-            src.endsWith("mix.jpg") ? "zoomed-img-collage" : "zoomed-img"
+            zoomedImageSrc.endsWith("mix.jpg")
+              ? "zoomed-img-collage"
+              : "zoomed-img"
           }`}
         />
       </div>

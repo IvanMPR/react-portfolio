@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCog } from "@fortawesome/free-solid-svg-icons";
 
@@ -8,19 +6,16 @@ import SectionTitle from "../miscellaneous/SectionTitle";
 import SectionContent from "../miscellaneous/SectionContent";
 import ProjectsSubtitle from "./ProjectsSubtitle";
 
-import { projectsObject } from "../../projects";
-import { begToIntIcons } from "./icons";
-
 import Modal from "../miscellaneous/Modal";
 import Section from "../miscellaneous/Section";
 
+import { useProjectsContext } from "../../contexts/ProjectsContext";
+
 function ProjectsMainSection() {
-  const [isZoomed, setIsZoomed] = useState(false);
-  const [zoomedImageSrc, setZoomedImageSrc] = useState("");
-  const [currentImage, setCurrentImage] = useState(0);
+  const { isZoomed } = useProjectsContext();
 
   return isZoomed ? (
-    <Modal src={zoomedImageSrc} setIsZoomed={setIsZoomed} />
+    <Modal />
   ) : (
     <Section prefix="projects">
       <SectionTitle
@@ -29,21 +24,12 @@ function ProjectsMainSection() {
           <FontAwesomeIcon icon={faUserCog} className="section__title--icon" />
         }
       />
-
       <SectionContent prefix="projects">
-        <ProjectsSubtitle heading={""} iconSet={begToIntIcons} />
-
-        <ProjectsFrame
-          arrayOfProjects={projectsObject}
-          isZoomed={isZoomed}
-          setIsZoomed={setIsZoomed}
-          zoomedImageSrc={zoomedImageSrc}
-          setZoomedImageSrc={setZoomedImageSrc}
-          currentImage={currentImage}
-          setCurrentImage={setCurrentImage}
-        />
+        <ProjectsSubtitle />
+        <ProjectsFrame />
       </SectionContent>
     </Section>
   );
 }
+
 export default ProjectsMainSection;

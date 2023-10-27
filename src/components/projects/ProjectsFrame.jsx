@@ -7,25 +7,19 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-function ProjectsFrame({
-  isRowReversed,
-  arrayOfProjects,
-  isZoomed,
-  setIsZoomed,
-  zoomedImageSrc,
-  setZoomedImageSrc,
-  currentImage,
-  setCurrentImage,
-}) {
-  const threshold = arrayOfProjects.length - 1;
+import { useProjectsContext } from "../../contexts/ProjectsContext";
 
-  const handleLeftArrowClick = () => {
-    setCurrentImage(currentImage - 1 >= 0 ? currentImage - 1 : threshold);
-  };
-
-  const handleRightArrowClick = () => {
-    setCurrentImage(currentImage + 1 <= threshold ? currentImage + 1 : 0);
-  };
+function ProjectsFrame() {
+  const {
+    arrayOfProjects,
+    isZoomed,
+    setIsZoomed,
+    zoomedImageSrc,
+    setZoomedImageSrc,
+    currentImage,
+    handleLeftArrowClick,
+    handleRightArrowClick,
+  } = useProjectsContext();
 
   return (
     <div className="frame">
@@ -42,7 +36,6 @@ function ProjectsFrame({
           project={project}
           i={i}
           currentImage={currentImage}
-          isRowReversed={isRowReversed}
           isZoomed={isZoomed}
           setIsZoomed={setIsZoomed}
           zoomedImageSrc={zoomedImageSrc}
@@ -50,11 +43,7 @@ function ProjectsFrame({
         />
       ))}
 
-      <ProjectsDotContainer
-        arrayOfProjects={arrayOfProjects}
-        currentImage={currentImage}
-        setCurrentImage={setCurrentImage}
-      />
+      <ProjectsDotContainer />
     </div>
   );
 }
