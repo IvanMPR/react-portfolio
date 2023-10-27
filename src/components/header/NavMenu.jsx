@@ -1,6 +1,8 @@
+import { useHeaderContext } from "../../contexts/HeaderContext";
 import TopMenu from "../hamburger-menu/TopMenu";
 
-function NavMenu({ checked, setChecked }) {
+function NavMenu() {
+  const { checked, setChecked } = useHeaderContext();
   return (
     <>
       <div className="nav-menu">

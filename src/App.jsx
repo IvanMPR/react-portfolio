@@ -1,5 +1,7 @@
-import { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import { useAppContext } from "./contexts/AppContext";
+import { HeaderProvider } from "./contexts/HeaderContext.jsx";
 
 import Home from "./pages/Home";
 import Gratitude from "./pages/Gratitude";
@@ -10,23 +12,13 @@ import PageNotFound from "./pages/PageNotFound";
 import Header from "./components/header/Header";
 
 function App() {
-  const [colorTheme, setColorTheme] = useState(
-    () => localStorage.getItem("theme") || "default"
-  );
-
-  useEffect(() => {
-    if (colorTheme === "default") {
-      document.body.dataset.theme = "default";
-      localStorage.setItem("theme", "default");
-    } else {
-      document.body.dataset.theme = "dark";
-      localStorage.setItem("theme", "dark");
-    }
-  }, [colorTheme]);
+  const { colorTheme, setColorTheme } = useAppContext();
 
   return (
     <BrowserRouter>
-      <Header colorTheme={colorTheme} setColorTheme={setColorTheme} />
+      <HeaderProvider>
+        <Header colorTheme={colorTheme} setColorTheme={setColorTheme} />
+      </HeaderProvider>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />

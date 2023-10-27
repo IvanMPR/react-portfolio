@@ -1,7 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
-function HeaderThemeToggler({ colorTheme, setColorTheme }) {
+import { useAppContext } from "../../contexts/AppContext";
+
+function HeaderThemeToggler() {
+  const { colorTheme, setColorTheme } = useAppContext();
+
   return (
     <div className="nav-left__toggler">
       {colorTheme === "default" && (
