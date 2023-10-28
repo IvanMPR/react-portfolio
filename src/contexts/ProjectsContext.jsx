@@ -18,8 +18,10 @@ function ProjectsProvider({ children }) {
   const handleRightArrowClick = () => {
     setCurrentImage(currentImage + 1 <= threshold ? currentImage + 1 : 0);
   };
-  function handleZoom() {
+
+  function handleZoom(e) {
     setIsZoomed((prev) => !prev);
+    setZoomedImageSrc(e.target.src);
   }
 
   const heading = "";

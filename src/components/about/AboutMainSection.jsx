@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserTie } from "@fortawesome/free-solid-svg-icons";
 
@@ -26,15 +24,13 @@ import SectionContent from "../miscellaneous/SectionContent";
 import AboutPersonal from "./AboutPersonal";
 import AboutCollageImage from "./AboutCollageImage";
 import AboutBlobImage from "./AboutBlobImage";
+import { useProjectsContext } from "../../contexts/ProjectsContext";
 
 function AboutMainSection() {
-  const [isCollageZoomed, setIsCollageZoomed] = useState(false);
+  const { isZoomed } = useProjectsContext();
 
-  function handleCollageImageZoom() {
-    setIsCollageZoomed((prev) => !prev);
-  }
-  return isCollageZoomed ? (
-    <Modal src="/images/mix.jpg" setIsZoomed={setIsCollageZoomed} />
+  return isZoomed ? (
+    <Modal />
   ) : (
     <Section prefix="about">
       <SectionTitle
@@ -92,9 +88,7 @@ function AboutMainSection() {
             <AboutPersonal />
           </AboutContentPairLeft>
           <AboutContentPairRight>
-            <AboutCollageImage
-              handleCollageImageZoom={handleCollageImageZoom}
-            />
+            <AboutCollageImage />
           </AboutContentPairRight>
         </AboutContentPair>
       </SectionContent>
