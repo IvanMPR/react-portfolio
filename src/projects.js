@@ -104,4 +104,14 @@ export const projectsObject = [
     of the board and earn points...`,
     projectNum: 8,
   },
+  {
+    shortTitle: "firebase-budget-tracker",
+    imageSrc: "/projectsThumbnails/firebase-budget-tracker.jpg",
+    alt: "firebase-budget-tracker",
+    fullTitle: "Budget Tracker - Firebase",
+    demoHref: "https://ivanmpr.github.io/firebase-budget-tracker/",
+    codeHref: "https://github.com/IvanMPR/firebase-budget-tracker",
+    description: `CRUD app with implemented Firebase database and authentication. You can add, edit, delete and filter your expenses... `,
+    projectNum: 9,
+  },
 ];
