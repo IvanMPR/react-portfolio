@@ -12,7 +12,7 @@ import Header from "./components/header/Header";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ivanmiceta.dev/">
       <HeaderProvider>
         <Header />
       </HeaderProvider>

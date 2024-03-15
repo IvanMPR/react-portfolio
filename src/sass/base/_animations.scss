@@ -15,7 +15,7 @@
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-10rem);
+    transform: translateX(-5rem);
   }
 
   80% {
@@ -31,7 +31,7 @@
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(10rem);
+    transform: translateX(5rem);
   }
 
   80% {
@@ -44,63 +44,63 @@
   }
 }
 
-@keyframes moveInRightOpaque {
-  0% {
-    transform: translateX(100vw);
-  }
+// @keyframes moveInRightOpaque {
+//   0% {
+//     transform: translateX(100vw);
+//   }
 
-  80% {
-    transform: translateX(-1rem);
-  }
+//   80% {
+//     transform: translateX(-1rem);
+//   }
 
-  100% {
-    transform: translate(0);
-  }
-}
+//   100% {
+//     transform: translate(0);
+//   }
+// }
 
-@keyframes down {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translateY(15px);
-  }
-  40% {
-    transform: translate(0);
-  }
-}
+// @keyframes down {
+//   0% {
+//     transform: translate(0);
+//   }
+//   20% {
+//     transform: translateY(15px);
+//   }
+//   40% {
+//     transform: translate(0);
+//   }
+// }
 
-@-webkit-keyframes down {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translateY(15px);
-  }
-  40% {
-    transform: translate(0);
-  }
-}
-@keyframes up {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translateY(-15px);
-  }
-  40% {
-    transform: translate(0);
-  }
-}
+// @-webkit-keyframes down {
+//   0% {
+//     transform: translate(0);
+//   }
+//   20% {
+//     transform: translateY(15px);
+//   }
+//   40% {
+//     transform: translate(0);
+//   }
+// }
+// @keyframes up {
+//   0% {
+//     transform: translate(0);
+//   }
+//   20% {
+//     transform: translateY(-15px);
+//   }
+//   40% {
+//     transform: translate(0);
+//   }
+// }
 
-@-webkit-keyframes up {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translateY(-15px);
-  }
-  40% {
-    transform: translate(0);
-  }
-}
+// @-webkit-keyframes up {
+//   0% {
+//     transform: translate(0);
+//   }
+//   20% {
+//     transform: translateY(-15px);
+//   }
+//   40% {
+//     transform: translate(0);
+//   }
+// }
