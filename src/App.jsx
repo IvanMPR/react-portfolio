@@ -12,17 +12,17 @@ import Header from "./components/header/Header";
 
 function App() {
   return (
-    <BrowserRouter basename="/ivanmiceta.dev/">
+    <BrowserRouter basename='/react-portfolio/'>
       <HeaderProvider>
         <Header />
       </HeaderProvider>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="gratitude" element={<Gratitude />} />
-        <Route path="*" element={<PageNotFound />} />
+        <Route path='/' element={<Home />} />
+        <Route path='about' element={<About />} />
+        <Route path='projects' element={<Projects />} />
+        <Route path='contact' element={<Contact />} />
+        <Route path='gratitude' element={<Gratitude />} />
+        <Route path='*' element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
   );
