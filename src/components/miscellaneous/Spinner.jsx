@@ -1,4 +1,4 @@
-import { Bars } from "react-loader-spinner";
+import { TailSpin } from "react-loader-spinner";
 
 function Spinner() {
   return (
@@ -10,14 +10,15 @@ function Spinner() {
         height: "100vh",
       }}
     >
-      <Bars
+      <TailSpin
+        visible={true}
         height='80'
         width='80'
         color='var(--color-primary)'
-        ariaLabel='bars-loading'
+        ariaLabel='tail-spin-loading'
+        radius='1'
         wrapperStyle={{}}
         wrapperClass=''
-        visible={true}
       />
     </div>
   );
