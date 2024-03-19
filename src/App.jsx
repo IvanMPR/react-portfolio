@@ -3,6 +3,7 @@ import { lazy, Suspense } from "react";
 import { HeaderProvider } from "./contexts/HeaderContext.jsx";
 
 import Spinner from "./components/miscellaneous/Spinner.jsx";
+import Header from "./components/header/Header";
 
 const Home = lazy(() => import("./pages/Home"));
 const Gratitude = lazy(() => import("./pages/Gratitude"));
@@ -10,7 +11,7 @@ const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Projects = lazy(() => import("./pages/Projects"));
 const PageNotFound = lazy(() => import("./pages/PageNotFound"));
-const Header = lazy(() => import("./components/header/Header"));
+// const Header = lazy(() => import("./components/header/Header"));
 
 // import Home from "./pages/Home";
 // import Gratitude from "./pages/Gratitude";
@@ -18,15 +19,14 @@ const Header = lazy(() => import("./components/header/Header"));
 // import Contact from "./pages/Contact";
 // import Projects from "./pages/Projects";
 // import PageNotFound from "./pages/PageNotFound";
-// import Header from "./components/header/Header";
 
 function App() {
   return (
     <BrowserRouter basename='/react-portfolio/'>
+      <HeaderProvider>
+        <Header />
+      </HeaderProvider>
       <Suspense fallback={<Spinner />}>
-        <HeaderProvider>
-          <Header />
-        </HeaderProvider>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='about' element={<About />} />
