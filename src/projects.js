@@ -106,7 +106,7 @@ export const projectsObject = [
   },
   {
     shortTitle: "firebase-budget-tracker",
-    imageSrc: "projectsThumbnails/firebase-budget-tracker.jpg",
+    imageSrc: "projectsThumbnails/firebase-budget-tracker.png",
     alt: "firebase-budget-tracker",
     fullTitle: "Budget Tracker - Firebase",
     demoHref: "https://ivanmpr.github.io/firebase-budget-tracker/",
