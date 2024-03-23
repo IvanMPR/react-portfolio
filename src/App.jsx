@@ -22,7 +22,7 @@ const PageNotFound = lazy(() => import("./pages/PageNotFound"));
 
 function App() {
   return (
-    <BrowserRouter basename='/react-portfolio/'>
+    <BrowserRouter>
       <HeaderProvider>
         <Header />
       </HeaderProvider>

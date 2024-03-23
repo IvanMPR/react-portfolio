@@ -7,11 +7,11 @@ function HeaderThemeToggler() {
   const { colorTheme, setColorTheme } = useAppContext();
 
   return (
-    <div className="nav-left__toggler">
+    <div className='nav-left__toggler'>
       {colorTheme === "default" && (
         <FontAwesomeIcon
           icon={faMoon}
-          title="Click for dark mode"
+          title='Click for dark theme'
           onClick={() => setColorTheme("dark")}
         />
       )}
@@ -19,7 +19,7 @@ function HeaderThemeToggler() {
       {colorTheme === "dark" && (
         <FontAwesomeIcon
           icon={faSun}
-          title="Click for dark mode"
+          title='Click for light theme'
           onClick={() => setColorTheme("default")}
         />
       )}
