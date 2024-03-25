@@ -18,7 +18,7 @@ export const projectsObject = [
     fullTitle: "Hangman game",
     demoHref: "https://ivanmpr.github.io/Hangman-game/",
     codeHref: "https://github.com/IvanMPR/Hangman-game",
-    description: `The goal of the game is to guess the hidden city name. Player has max of 10 attempts. For every miss, one additional part of the body is hanged...`,
+    description: `The goal of the game is to guess the hidden country name. Player has max of 10 attempts. For every miss, one additional part of the body is hanged...`,
     projectNum: 1,
   },
   {
@@ -113,5 +113,15 @@ export const projectsObject = [
     codeHref: "https://github.com/IvanMPR/firebase-budget-tracker",
     description: `CRUD app with implemented Firebase database and authentication. You can add, edit, delete and filter your expenses... `,
     projectNum: 9,
+  },
+  {
+    shortTitle: "react-portfolio",
+    imageSrc: "projectsThumbnails/portfolio.png",
+    alt: "react-portoflio",
+    fullTitle: "this",
+    demoHref: "https://ivanmiceta.dev",
+    codeHref: "https://github.com/IvanMPR/react-portfolio",
+    description: `...is the website you're currently browsing. It is created using React and Sass, it is responsive, and for the sake of learning, everything is built from scratch...`,
+    projectNum: 10,
   },
 ];
