@@ -3,8 +3,6 @@
 
 .projects-section {
   position: relative;
-  // margin-top: -5rem;
-  // margin-bottom: 3rem;
 
   &__content {
     display: flex;
@@ -53,8 +51,7 @@
     margin-bottom: 3rem;
   }
 
-  .frame,
-  .frame__advanced {
+  .frame {
     width: 100%;
     min-height: 50rem;
     position: relative;
@@ -63,9 +60,7 @@
     // background: var(--color-bg-offset);
 
     .frame-arrow__left,
-    .frame-arrow__left--advanced,
-    .frame-arrow__right,
-    .frame-arrow__right--advanced {
+    .frame-arrow__right {
       position: absolute;
       cursor: pointer;
       color: var(--color-text);
@@ -73,8 +68,7 @@
       z-index: 100;
     }
 
-    .frame-arrow__left,
-    .frame-arrow__left--advanced {
+    .frame-arrow__left {
       top: 50%;
       left: 0;
 
@@ -83,8 +77,7 @@
       }
     }
 
-    .frame-arrow__right,
-    .frame-arrow__right--advanced {
+    .frame-arrow__right {
       top: 50%;
       right: 0;
 
@@ -93,8 +86,7 @@
       }
     }
 
-    .dots-container,
-    .dots-container__advanced {
+    .dots-container {
       position: absolute;
       top: 95%;
       left: 50%;
@@ -102,8 +94,7 @@
       display: flex;
       align-items: center;
     }
-    .dot,
-    .dot__advanced {
+    .dot {
       display: block;
       width: 1rem;
       height: 1rem;
@@ -113,23 +104,16 @@
       opacity: 0.3;
     }
 
-    .dot:hover,
-    .dot__advanced:hover {
+    .dot:hover {
       cursor: pointer;
     }
 
-    .dot-active,
-    .dot-active__advanced {
+    .dot-active {
       opacity: 0.7;
     }
   }
-  // reminder to be adjusted
-  .project__advanced {
-    flex-direction: row-reverse;
-  }
 
-  .project,
-  .project__advanced {
+  .project {
     width: 100%;
     border-radius: 1rem;
     transition: all 0.3s ease-out;
@@ -140,9 +124,7 @@
     top: 10rem;
 
     &-left,
-    &-left__advanced,
-    &-right,
-    &-right__advanced {
+    &-right {
       width: 48%;
     }
 
@@ -150,14 +132,7 @@
       padding-left: 5rem;
     }
 
-    // reminder to be adjusted
-    // flipped to row-reverse, so padding adjustment is needed
-    &-left__advanced {
-      padding-right: 5rem;
-    }
-
-    &-left__image-container,
-    &-left__image-container--advanced {
+    &-left__image-container {
       max-width: 100%;
       transition: all 0.2s;
       position: relative;
@@ -167,12 +142,7 @@
       box-shadow: 0px 1rem 1rem -1rem rgba(13, 43, 90, 0.18);
     }
 
-    &-left__image-container--advanced:hover {
-      box-shadow: 0px 1rem 1rem -1rem rgba(13, 43, 90, 0.18);
-    }
-
-    &-left__image,
-    &-left__image--advanced {
+    &-left__image {
       width: 100%;
       border-radius: 0.5rem;
       border: 1px solid var(--color-text);
@@ -182,54 +152,34 @@
     &-right {
       padding-right: 5rem;
     }
-    // reminder to be adjusted
-    // flipped to row-reverse, so padding adjustment is needed
-    &-right__advanced {
-      padding-left: 5rem;
-    }
 
-    &-right,
-    &-right__advanced {
+    &-right {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
 
-      &__title--advanced {
-        text-align: right;
-      }
-      &__title,
-      &__title--advanced {
+      &__title {
         font-size: var(--font-l);
         color: var(--color-text);
       }
 
-      &__container--advanced {
-        justify-content: flex-end;
-      }
-
-      &__container,
-      &__container--advanced {
+      &__container {
         display: flex;
         align-items: center;
         margin: 2rem 0;
 
-        &-link,
-        &-link--advanced {
+        &-link {
           font-size: var(--font-normal);
           color: var(--color-text);
           border-bottom: 2px solid var(--color-primary);
         }
       }
 
-      &__demo,
-      &__demo--advanced {
+      &__demo {
         margin-right: 5rem;
       }
-      &__description--advanced {
-        text-align: justify;
-      }
-      &__description,
-      &__description--advanced {
+
+      &__description {
         color: var(--color-text);
         font-size: var(--font-normal);
       }
@@ -238,22 +188,28 @@
 
   @include respond(phone) {
     & {
-      margin-bottom: 3rem;
+      // margin-bottom: 3rem;
 
-      .frame,
-      .frame__advanced {
-        // by increasing height of a frame div,
-        // description text remains visible on small screens
-        min-height: 65rem;
-
-        .dots-container,
-        .dots-container__advanced {
-          top: 98%;
+      &__content {
+        .subtitle {
+          margin: 1rem auto 0;
+          &-icon:not(:last-child) {
+            margin-right: 1.5rem;
+          }
         }
       }
 
-      .project,
-      .project__advanced {
+      .frame {
+        // by increasing height of a frame div,
+        // description text remains visible on small screens
+        min-height: 60rem;
+
+        .dots-container {
+          top: 92%;
+        }
+      }
+
+      .project {
         flex-direction: column;
         top: 8rem;
 
@@ -262,14 +218,6 @@
           width: 70%;
         }
         &-left {
-          padding-left: 0;
-          width: 70%;
-        }
-        &-left__advanced {
-          padding-right: 0;
-          width: 70%;
-        }
-        &-right__advanced {
           padding-left: 0;
           width: 70%;
         }
@@ -281,20 +229,17 @@
     & {
       margin-bottom: 2.5rem;
 
-      .frame,
-      .frame__advanced {
+      .frame {
         // by increasing height of a frame div,
         // description text remains visible on small screens
         min-height: 65rem;
 
-        .dots-container,
-        .dots-container__advanced {
+        .dots-container {
           top: 99%;
         }
       }
 
-      .project,
-      .project__advanced {
+      .project {
         flex-direction: column;
         top: 8rem;
 
@@ -304,14 +249,6 @@
         }
         &-left {
           padding-left: 0;
-          width: 70%;
-        }
-        &-right__advanced {
-          padding-left: 0;
-          width: 70%;
-        }
-        &-left__advanced {
-          padding-right: 0;
           width: 70%;
         }
       }
