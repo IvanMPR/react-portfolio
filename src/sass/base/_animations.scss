@@ -44,19 +44,19 @@
   }
 }
 
-// @keyframes moveInRightOpaque {
-//   0% {
-//     transform: translateX(100vw);
-//   }
+@keyframes moveInRightOpaque {
+  0% {
+    transform: translateX(100vw);
+  }
 
-//   80% {
-//     transform: translateX(-1rem);
-//   }
+  80% {
+    transform: translateX(-1rem);
+  }
 
-//   100% {
-//     transform: translate(0);
-//   }
-// }
+  100% {
+    transform: translate(0);
+  }
+}
 
 // @keyframes down {
 //   0% {
