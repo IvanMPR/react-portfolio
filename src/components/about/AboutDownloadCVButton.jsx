@@ -2,8 +2,8 @@ import React from "react";
 
 function AboutDownloadCVButton() {
   return (
-    <div className="container wrapper btn-wrapper">
-      <a href="" className="btn btn__cv">
+    <div className='container wrapper btn-wrapper'>
+      <a href='/CV.pdf' download className='btn btn__cv'>
         Download CV
       </a>
     </div>
