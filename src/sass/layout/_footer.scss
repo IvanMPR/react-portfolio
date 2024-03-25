@@ -6,12 +6,10 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  // border-top: 2px solid var(--color-bgd-offset);
-  // margin-bottom: 3rem;
 
-  &__home {
-    margin-bottom: 3rem;
-  }
+  // &__home {
+  //   margin-bottom: 3rem;
+  // }
 
   &__upper {
     width: 100%;
@@ -25,15 +23,6 @@
     align-items: center;
   }
 
-  &__codewars {
-    // background: #000;
-  }
-
-  &__codewars--img {
-    width: 53%;
-    display: block;
-    // margin-left: auto;
-  }
   // .fab className style for footer brand icons/ to be refactored
   .fab {
     color: var(--color-text);
@@ -43,52 +32,6 @@
 
   .fab:hover {
     color: var(--color-primary);
-  }
-
-  &__scroll {
-    display: flex;
-    align-items: center;
-    margin-right: 5rem;
-
-    &--p {
-      font-size: var(--font-normal);
-      color: var(--color-text);
-      margin: 0 2rem;
-    }
-
-    .fa-solid {
-      color: var(--color-text);
-      font-size: var(--font-normal);
-    }
-
-    &--next:active {
-      transform: translateY(3px);
-    }
-  }
-
-  &__cv-button {
-    font-size: var(--font-normal);
-  }
-
-  &__languages--english-flag,
-  &__languages--serbian-flag {
-    margin: 0 1rem;
-    height: 2.5rem;
-    border-radius: 5%;
-  }
-
-  &__lower {
-    &-licence {
-      font-size: var(--font-small);
-      color: var(--color-bgd-offset);
-    }
-
-    &-copy {
-      color: var(--color-text-offset);
-      font-size: var(--font-normal);
-      margin: 0 1rem;
-      // text-align: center;
-    }
   }
 
   @include respond(phone) {
