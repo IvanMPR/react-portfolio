@@ -30,8 +30,8 @@ function Project(props) {
       className={`project project-${shortTitle}`}
       style={{ transform: `translateX(${100 * (i - currentImage)}%)` }}
     >
-      <div className="project-left">
-        <div className="project-left__image-container wrapper">
+      <div className='project-left'>
+        <div className='project-left__image-container wrapper'>
           <ProjectsImage
             imageSrc={imageSrc}
             title={title}
@@ -43,29 +43,34 @@ function Project(props) {
           />
         </div>
       </div>
-      <div className="project-right">
-        <h3 className="project-right__title">{fullTitle}</h3>
-        <div className="project-right__container">
+      <div className='project-right'>
+        <h3
+          className='project-right__title'
+          style={{ fontStyle: fullTitle === "this" ? "italic" : "normal" }}
+        >
+          {fullTitle}
+        </h3>
+        <div className='project-right__container'>
           <a
-            rel="noreferrer"
-            target="_blank"
+            rel='noreferrer'
+            target='_blank'
             href={demoHref}
             title={demoTitle}
-            className="project-right__container-link project-right__demo"
+            className='project-right__container-link project-right__demo'
           >
             Demo
           </a>
           <a
-            rel="noreferrer"
+            rel='noreferrer'
             href={codeHref}
-            target="_blank"
+            target='_blank'
             title={codeTitle}
-            className="project-right__container-link project-right__code"
+            className='project-right__container-link project-right__code'
           >
             Source code
           </a>
         </div>
-        <p className="project-right__description">{description}</p>
+        <p className='project-right__description'>{description}</p>
       </div>
     </div>
   );
