@@ -10,7 +10,7 @@ function HomeMainSection() {
               Hello, my name is Ivan Miceta
             </span>
             <span className='home__main-h1--big wrapper'>
-              I'm self taught web developer
+              I'm a self taught web developer
             </span>
           </h1>
           <div className='home__main-btn wrapper-l'>
