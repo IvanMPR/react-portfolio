@@ -6,7 +6,7 @@ export const projectsObject = [
     fullTitle: "Budget Tracker - Firebase",
     demoHref: "https://ivanmpr.github.io/firebase-budget-tracker/",
     codeHref: "https://github.com/IvanMPR/firebase-budget-tracker",
-    description: `CRUD app with implemented Firebase database and authentication. You can add, edit, delete and filter your expenses... `,
+    description: `React CRUD app with implemented Firebase database and authentication, styled with Tailwind CSS. You can add, edit, delete and filter your expenses... `,
     projectNum: 0,
   },
   {
@@ -110,14 +110,14 @@ export const projectsObject = [
     projectNum: 9,
   },
 
-  {
-    shortTitle: "hangman",
-    imageSrc: "projectsThumbnails/hangman.jpg",
-    alt: "Hangman game",
-    fullTitle: "Hangman game",
-    demoHref: "https://ivanmpr.github.io/Hangman-game/",
-    codeHref: "https://github.com/IvanMPR/Hangman-game",
-    description: `The goal of the game is to guess the hidden country name. Player has max of 10 attempts. For every miss, one additional part of the body is hanged...`,
-    projectNum: 10,
-  },
+  // {
+  //   shortTitle: "hangman",
+  //   imageSrc: "projectsThumbnails/hangman.jpg",
+  //   alt: "Hangman game",
+  //   fullTitle: "Hangman game",
+  //   demoHref: "https://ivanmpr.github.io/Hangman-game/",
+  //   codeHref: "https://github.com/IvanMPR/Hangman-game",
+  //   description: `The goal of the game is to guess the hidden country name. Player has max of 10 attempts. For every miss, one additional part of the body is hanged...`,
+  //   projectNum: 10,
+  // },
 ];
