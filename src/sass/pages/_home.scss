@@ -72,28 +72,23 @@
 
   @include respond(tab-p) {
     & {
-      // flex-direction: column;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      // margin-bottom: 7rem;
-      // background-color: aqua;
+      margin: 7.5rem auto;
     }
 
     &__main-h1 {
-      // margin-bottom: 6rem;
+      // margin-bottom: 2rem;
       width: 100%;
-      // background-color: olivedrab;
+
       &--big {
-        font-size: var(--font-xl);
+        font-size: var(--font-xxl);
       }
     }
     &__main-image {
-      // background-color: burlywood;
       width: 48rem;
-
-      // .main__blob {
-      //   // display: block;
-      // }
+      align-self: flex-start;
     }
   }
   @include respond(tab-l) {
