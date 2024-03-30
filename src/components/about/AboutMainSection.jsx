@@ -32,21 +32,21 @@ function AboutMainSection() {
   return isZoomed ? (
     <Modal />
   ) : (
-    <Section prefix="about">
+    <Section prefix='about'>
       <SectionTitle
-        title="About me"
+        title='About me'
         icon={
-          <FontAwesomeIcon icon={faUserTie} className="section__title--icon" />
+          <FontAwesomeIcon icon={faUserTie} className='section__title--icon' />
         }
       />
 
       <AboutDownloadCVButton />
-      <SectionContent prefix="about">
+      <SectionContent prefix='about'>
         <AboutContentPair>
           <AboutContentPairLeft>
-            <AboutContentSubtitle text="General" />
-            <div className="left-intro wrapper">
-              {generalParagraphs.map((para) => (
+            <AboutContentSubtitle text='General' />
+            <div className='left-intro wrapper'>
+              {generalParagraphs.map(para => (
                 <AboutGeneralParagraph key={para.paragraph.slice(0, 5)}>
                   {para.paragraph}
                 </AboutGeneralParagraph>
@@ -58,15 +58,15 @@ function AboutMainSection() {
           </AboutContentPairRight>
         </AboutContentPair>
         <AboutAdditionalInfo>
-          <AboutAdditionalInfoCodewars />
+          <AboutAdditionalInfoResume />
         </AboutAdditionalInfo>
-        <AboutContentPair additionalClass="about-section__content--middle">
+        <AboutContentPair additionalClass='about-section__content--middle'>
           <AboutContentPairLeft>
-            <AboutContentSubtitle text="Skills & certificates" />
+            <AboutContentSubtitle text='Skills & certificates' />
             <AboutContentPairLeftPara />
 
             {skillsParagraphs.map(({ skill, level }) => (
-              <div className="left-skills" key={skill}>
+              <div className='left-skills' key={skill}>
                 <AboutSkillRow skill={skill}>
                   <AboutSkillIcon skill={skill} />
                   <AboutSkillBar skill={skill} level={level} />
@@ -80,11 +80,11 @@ function AboutMainSection() {
           </AboutContentPairRight>
         </AboutContentPair>
         <AboutAdditionalInfo>
-          <AboutAdditionalInfoResume />
+          <AboutAdditionalInfoCodewars />
         </AboutAdditionalInfo>
         <AboutContentPair>
           <AboutContentPairLeft>
-            <AboutContentSubtitle text="Personal & bio" />
+            <AboutContentSubtitle text='Personal & bio' />
             <AboutPersonal />
           </AboutContentPairLeft>
           <AboutContentPairRight>
